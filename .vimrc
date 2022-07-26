@@ -23,3 +23,16 @@ syntax enable
 filetype plugin on
 
 let mapleader="\<SPACE>"
+
+if filereadable(expand("~/.vim/autoload/plug.vim"))
+  call plug#begin()
+
+  Plug 'tpope/vim-surround'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'michaeljsmith/vim-indent-object'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-fugitive'
+
+  call plug#end()
+endif
+

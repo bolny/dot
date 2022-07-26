@@ -1,6 +1,6 @@
 if [ "$(basename ${SHELL})" = "zsh" ]
 then
-  PS1='%~ > '
+  PS1='%n@%m %~ > '
 fi
 
 . ~/.bashrc

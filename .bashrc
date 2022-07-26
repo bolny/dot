@@ -12,5 +12,5 @@ alias grep='grep --color'
 
 if [ "$(basename ${SHELL})" = "bash" ]
 then
-  PS1='\W > '
+  export PS1="\u@\h: \W > "
 fi
