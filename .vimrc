@@ -14,15 +14,13 @@ set smartindent
 set smarttab
 set expandtab
 set nowrap
-set notimeout
-set nottimeout
 
 set foldmethod=manual
 
 syntax enable
 filetype plugin on
 
-let mapleader="\<SPACE>"
+let mapleader=","
 
 if filereadable(expand("~/.vim/autoload/plug.vim"))
   call plug#begin()
