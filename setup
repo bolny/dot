@@ -1,9 +1,4 @@
-#!/bin/bash
-
-if [ "$(uname)" = "Darwin" ]
-then
-	ln -sf "${PWD}/.Brewfile" "${HOME}/.Brewfile"
-fi
+#!/bin/sh
 
 ln -sf "${PWD}/.bashrc" "${HOME}/.bashrc"
 ln -sf "${PWD}/.gitconfig" "${HOME}/.gitconfig"
@@ -13,3 +8,8 @@ ln -sf "${PWD}/.tmux.conf" "${HOME}/.tmux.conf"
 ln -sf "${PWD}/.vimrc" "${HOME}/.vimrc"
 ln -sf "${PWD}/.zprofile" "${HOME}/.zprofile"
 ln -sf "${PWD}/.zshrc" "${HOME}/.zshrc"
+
+if [ "$1" != "" ]
+then
+  sh "./machines/$1/setup"
+fi
