@@ -4,4 +4,4 @@ PATH="${HOME}/.bin:${PATH}"
 
 export PATH
 
-[ -f .profile.local ] && source .profile.local
+[ -f ~/.profile.local ] && source ~/.profile.local

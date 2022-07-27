@@ -7,5 +7,5 @@ then
   PS1="%n@%m %~${NL}> "
 fi
 
-[ -f .zshrc.local ] && source .zshrc.local
-[ -f .bashrc ] && source .bashrc
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+[ -f ~/.bashrc ] && source ~/.bashrc

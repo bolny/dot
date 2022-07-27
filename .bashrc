@@ -17,4 +17,4 @@ then
   export PS1="\u@\h \w\n> "
 fi
 
-[ -f .bashrc.local ] && source .bashrc.local
+[ -f ~/.bashrc.local ] && source ~/.bashrc.local
