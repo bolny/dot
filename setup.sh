@@ -6,7 +6,6 @@ then
 fi
 
 ln -sf "${PWD}/.bashrc" "${HOME}/.bashrc"
-ln -sf "${PWD}/.git" "${HOME}/.git"
 ln -sf "${PWD}/.gitconfig" "${HOME}/.gitconfig"
 ln -sf "${PWD}/.gitignore_global" "${HOME}/.gitignore_global"
 ln -sf "${PWD}/.profile" "${HOME}/.profile"
