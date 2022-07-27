@@ -4,4 +4,4 @@ then
   PS1="%n@%m %~${NL}> "
 fi
 
-. ~/.bashrc
+source ~/.bashrc
