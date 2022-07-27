@@ -28,6 +28,7 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
   call plug#begin()
 
   Plug 'tpope/vim-surround'
+  Plug 'editorconfig/editorconfig-vim'
   Plug 'airblade/vim-gitgutter'
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'tpope/vim-repeat'
