@@ -1,7 +1,11 @@
-if [ "$(basename ${SHELL})" = "zsh" ]
+#! /bin/zsh
+# shellcheck shell=bash
+
+if [ "$(basename "${SHELL}")" = "zsh" ]
 then
   NL=$'\n'
   PS1="%n@%m %~${NL}> "
 fi
 
-source ~/.bashrc
+[ -f .zshrc.local ] && source .zshrc.local
+[ -f .bashrc ] && source .bashrc

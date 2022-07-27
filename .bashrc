@@ -1,3 +1,5 @@
+#! /bin/bash
+
 HISTFILE=~/.history
 HISTSIZE=50000
 
@@ -10,7 +12,9 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias grep='grep --color'
 
-if [ "$(basename ${SHELL})" = "bash" ]
+if [ "$(basename "${SHELL}")" = "bash" ]
 then
   export PS1="\u@\h \w\n> "
 fi
+
+[ -f .bashrc.local ] && source .bashrc.local
