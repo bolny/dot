@@ -32,6 +32,7 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-fugitive'
   Plug 'vim-pandoc/vim-pandoc'
+  Plug 'vim-pandoc/vim-pandoc-syntax'
 
   call plug#end()
 endif
