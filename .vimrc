@@ -27,10 +27,11 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
 
   Plug 'tpope/vim-surround'
   Plug 'editorconfig/editorconfig-vim'
-  Plug 'airblade/vim-gitgutter'
+  "Plug 'airblade/vim-gitgutter'
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-fugitive'
+  Plug 'vim-pandoc/vim-pandoc'
 
   call plug#end()
 endif
