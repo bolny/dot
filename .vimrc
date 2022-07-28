@@ -16,6 +16,7 @@ set expandtab
 set nowrap
 
 set foldmethod=manual
+set nofoldenable
 
 syntax enable
 filetype plugin on
