@@ -11,6 +11,7 @@ brew "shellcheck"
 brew "tmux"
 brew "podman"
 brew "lynx"
+brew "entr"
 
 cask "adobe-dng-converter"
 cask "calibre"
