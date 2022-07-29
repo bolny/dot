@@ -2,7 +2,7 @@
 
 if command -v lynx
 then
-  lynx -nopause "https://duck.com/lite?q=$1"
+  lynx -cfg ~/.lynx.cfg "https://duck.com/lite?q=$1"
 else
   echo "No browser found."
 fi

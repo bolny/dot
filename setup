@@ -8,6 +8,7 @@ ln -sf "${PWD}/.tmux.conf" "${HOME}/.tmux.conf"
 ln -sf "${PWD}/.vimrc" "${HOME}/.vimrc"
 ln -sf "${PWD}/.zprofile" "${HOME}/.zprofile"
 ln -sf "${PWD}/.zshrc" "${HOME}/.zshrc"
+ln -sf "${PWD}/.lynx.cfg" "${HOME}/.lynx.cfg"
 
 mkdir -p "${HOME}/.bin"
 ln -sf "${PWD}/bin/duck" "${HOME}/.bin/duck"
