@@ -10,6 +10,7 @@ brew "git"
 brew "shellcheck"
 brew "tmux"
 brew "podman"
+brew "lynx"
 
 cask "adobe-dng-converter"
 cask "calibre"
