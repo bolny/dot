@@ -23,12 +23,13 @@ filetype plugin on
 
 let mapleader=","
 
+au filetype sh set makeprg=shellcheck\ -f\ gcc\ %
+
 if filereadable(expand("~/.vim/autoload/plug.vim"))
   call plug#begin()
 
   Plug 'tpope/vim-surround'
   Plug 'editorconfig/editorconfig-vim'
-  "Plug 'airblade/vim-gitgutter'
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-fugitive'
@@ -37,4 +38,5 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
 
   call plug#end()
 endif
+
 
