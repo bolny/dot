@@ -10,6 +10,7 @@ ln -sf "${PWD}/.lynx.cfg" "${HOME}/.lynx.cfg"
 
 mkdir -p "${HOME}/.bin"
 ln -sf "${PWD}/bin/duck" "${HOME}/.bin/duck"
+ln -sf "${PWD}/bin/dot_session" "${HOME}/.bin/dot_session"
 
 if [ "$1" != "" ]
 then
