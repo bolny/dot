@@ -14,9 +14,4 @@ alias grep='grep --color'
 alias lynx='lynx -cfg ~/.lynx.cfg'
 alias \?='duck'
 
-if [ "$(basename "${SHELL}")" = "bash" ]
-then
-  export PS1="\u@\h \w\n> "
-fi
-
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
