@@ -2,6 +2,10 @@
 
 # Designed to install developer tools inside a debian based docker image.
 
+echo "### Linking debian Dotfiles ###"
+ln -sf "${PWD}/machines/debian/.profile.local" "${HOME}/.profile.local"
+ln -sf "${PWD}/machines/debian/.bashrc.local" "${HOME}/.bashrc.local"
+
 # Install Developer tools
 echo "### Installing Packages ###"
 sudo apt-get update \
