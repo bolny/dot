@@ -1,4 +1,4 @@
-.PHONY: none goodsprings arroyo
+.PHONY: none goodsprings debian
 default: none
 
 none:
@@ -7,5 +7,5 @@ none:
 goodsprings:
 	./setup goodsprings
 
-arroyo:
-	./setup arroyo
+debian:
+	./setup debian
