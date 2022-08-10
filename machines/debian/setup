@@ -3,6 +3,7 @@
 # Designed to install developer tools inside a debian based docker image.
 
 # Install Developer tools
+echo "### Installing Packages ###"
 sudo apt-get update \
   && sudo apt-get -y install \
     vim \
