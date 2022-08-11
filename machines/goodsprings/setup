@@ -3,8 +3,13 @@
 echo "### Linking Goodsprings Dotfiles ###"
 ln -sf "${PWD}/machines/goodsprings/.Brewfile" "${HOME}/.Brewfile"
 ln -sf "${PWD}/machines/goodsprings/.zprofile.local" "${HOME}/.zprofile.local"
+ln -sf "${PWD}/machines/goodsprings/.zshrc.local" "${HOME}/.zshrc.local"
 ln -sf "${PWD}/machines/goodsprings/.gitconfig" "${HOME}/.gitconfig"
 ln -sf "${PWD}/machines/goodsprings/.gitignore_global" "${HOME}/.gitignore_global"
+
+mkdir -p "${HOME}/.config"
+rm -rf  "${HOME}/.config/streamlink"
+ln -sf "${PWD}/machines/goodsprings/streamlink" "${HOME}/.config/streamlink"
 
 if ! command -v brew > /dev/null
 then
