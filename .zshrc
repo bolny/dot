@@ -12,13 +12,16 @@ HISTSIZE=50000
 set -o vi
 
 alias cp='cp -i'
-alias l='ls -aF'
 alias ll='ls -lahFG'
 alias mv='mv -i'
 alias rm='rm -i'
 alias grep='grep --color'
+alias gr='grep --color'
+alias gl='git ls-files'
+alias gg='git grep'
 alias lynx='lynx -cfg ~/.lynx.cfg'
-alias \?='duck'
+alias ly='lynx -cfg ~/.lynx.cfg'
+alias se='duck'
 
 NL=$'\n'
 PS1="%n@%m %~${NL}> "
