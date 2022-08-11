@@ -2,7 +2,7 @@
 
 echo "### Linking Goodsprings Dotfiles ###"
 ln -sf "${PWD}/machines/goodsprings/.Brewfile" "${HOME}/.Brewfile"
-ln -sf "${PWD}/machines/goodsprings/.profile.local" "${HOME}/.profile.local"
+ln -sf "${PWD}/machines/goodsprings/.zprofile.local" "${HOME}/.zprofile.local"
 ln -sf "${PWD}/machines/goodsprings/.gitconfig" "${HOME}/.gitconfig"
 ln -sf "${PWD}/machines/goodsprings/.gitignore_global" "${HOME}/.gitignore_global"
 
@@ -14,5 +14,5 @@ else
   echo "### Brew detected, skipping install ###"
 fi
 
-echo "### Syncing Homebrew packages###"
+echo "### Syncing Homebrew packages ###"
 brew bundle --global --clean

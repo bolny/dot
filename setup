@@ -9,10 +9,18 @@ ln -sf "${PWD}/.zprofile" "${HOME}/.zprofile"
 ln -sf "${PWD}/.zshrc" "${HOME}/.zshrc"
 ln -sf "${PWD}/.lynx.cfg" "${HOME}/.lynx.cfg"
 
-mkdir -p "${HOME}/.bin"
-ln -sf "${PWD}/bin/duck" "${HOME}/.bin/duck"
-ln -sf "${PWD}/bin/dot_session" "${HOME}/.bin/dot_session"
-ln -sf "${PWD}/bin/zk_session" "${HOME}/.bin/zk_session"
+rm -rf "${HOME}/.bin"
+ln -sf "${PWD}/bin" "${HOME}/.bin"
+
+# Install vim-plug
+if [ -f "~/.vim/autoload/plug.vim" ]
+then
+  echo "### Installing vim-plug ###"
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+else
+  echo "### vim-plug detected. Skipping install. ###"
+fi
 
 if [ "$1" != "" ]
 then
