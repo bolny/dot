@@ -14,9 +14,12 @@ set smartindent
 set smarttab
 set expandtab
 set nowrap
+set nofixendofline
+set backupcopy=yes
 
 set foldmethod=manual
 set nofoldenable
+set clipboard=unnamedplus
 
 syntax enable
 filetype plugin on
