@@ -1,6 +1,8 @@
 #! /bin/zsh
 # shellcheck shell=bash
 
+setopt INC_APPEND_HISTORY
+
 PATH="${HOME}/.bin:${PATH}"
 PATH="${HOME}/.local/bin:${PATH}"
 
