@@ -1,40 +1,61 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 
-brew "gh"
-brew "git"
-brew "shellcheck"
+# Terminal Utilities
 brew "tmux"
-brew "podman"
-brew "lynx"
+brew "nq"
 brew "entr"
-brew "streamlink"
-brew "mpv"
 brew "ffmpeg"
 brew "pandoc"
-brew "qemu"
 
+# Terminal Applications
+brew "lynx"
+brew "streamlink"
+brew "podman"
+brew "qemu"
+brew "mpv"
+
+# Source code Management
+brew "gh"
+brew "git"
+
+# Development tools
+brew "shellcheck"
+brew "checkmake"
+
+# Photo Stuff
 cask "adobe-dng-converter"
-cask "calibre"
 cask "darktable"
-cask "docker"
 cask "digikam"
-cask "discord"
+
+# Ebook Stuff
+cask "calibre"
+
+# Developer Stuff
+cask "docker"
 cask "font-profont-nerd-font"
-cask "godot"
-cask "google-chrome"
 cask "iterm2"
-cask "krita"
-cask "lmms"
+cask "godot"
+cask "vagrant"
+
+# Gamer Stuff
+cask "discord"
 cask "logitech-g-hub"
-cask "mpv"
 cask "parsec"
-cask "raycast"
+
+# Web Stuff
+cask "google-chrome"
 cask "tor-browser"
 cask "transmission"
-cask "vagrant"
+
+# Art Stuff
+cask "krita"
+cask "lmms"
 cask "wacom-tablet"
+
+# Utilities
+cask "mpv"
+cask "raycast"
