@@ -19,7 +19,7 @@ set backupcopy=yes
 
 set foldmethod=manual
 set nofoldenable
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 syntax enable
 filetype plugin on
