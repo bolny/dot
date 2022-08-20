@@ -10,6 +10,8 @@ brew "nq"
 brew "entr"
 brew "ffmpeg"
 brew "pandoc"
+brew "fd"
+brew "rg"
 
 # Terminal Applications
 brew "lynx"
@@ -25,6 +27,7 @@ brew "git"
 # Development tools
 brew "shellcheck"
 brew "checkmake"
+brew "cmake"
 
 # Photo Stuff
 cask "adobe-dng-converter"
