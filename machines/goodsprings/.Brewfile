@@ -16,6 +16,7 @@ brew "streamlink"
 brew "mpv"
 brew "ffmpeg"
 brew "pandoc"
+brew "qemu"
 
 cask "adobe-dng-converter"
 cask "calibre"
