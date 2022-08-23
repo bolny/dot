@@ -1,6 +1,8 @@
 #! /bin/zsh
 # shellcheck shell=bash
 
+autoload -U compinit; compinit
+
 setopt INC_APPEND_HISTORY
 
 PATH="${HOME}/.bin:${PATH}"
