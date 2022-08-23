@@ -4,6 +4,7 @@ PATH="${HOME}/.bin:${PATH}"
 PATH="${HOME}/.local/bin:${PATH}"
 
 export PATH
+export EDITOR=vi
 
 HISTFILE=~/.history
 HISTSIZE=50000
