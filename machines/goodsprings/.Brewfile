@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
+tap "railwaycat/emacsmacport"
 
 # Terminal Utilities
 brew "tmux"
@@ -12,6 +13,7 @@ brew "ffmpeg"
 brew "pandoc"
 brew "fd"
 brew "rg"
+brew "coreutils"
 
 # Terminal Applications
 brew "lynx"
@@ -28,6 +30,8 @@ brew "git"
 brew "shellcheck"
 brew "checkmake"
 brew "cmake"
+brew "universal-ctags"
+brew "clang-format"
 
 # Photo Stuff
 cask "adobe-dng-converter"
@@ -43,6 +47,7 @@ cask "font-profont-nerd-font"
 cask "iterm2"
 cask "godot"
 cask "vagrant"
+cask "railwaycat/emacsmacport/emacs-mac"
 
 # Gamer Stuff
 cask "discord"
