@@ -1,6 +1,8 @@
 #!/bin/zsh
 # shellcheck shell=bash
 
+set -e
+
 echo "### Linking Goodsprings Dotfiles ###"
 ln -sf "${PWD}/machines/goodsprings/.Brewfile" "${HOME}/.Brewfile"
 ln -sf "${PWD}/machines/goodsprings/.zprofile.local" "${HOME}/.zprofile.local"
@@ -12,9 +14,6 @@ ln -sf "${PWD}/machines/goodsprings/.gitignore_global" \
 mkdir -p "${HOME}/.config"
 rm -rf  "${HOME}/.config/streamlink"
 ln -sf "${PWD}/machines/goodsprings/streamlink" "${HOME}/.config/streamlink"
-
-rm -rf  "${HOME}/.doom.d"
-ln -sf "${PWD}/machines/goodsprings/.doom.d" "${HOME}/.doom.d"
 
 if ! command -v brew > /dev/null
 then
@@ -29,6 +28,7 @@ else
 fi
 
 echo "### Syncing Homebrew packages ###"
+rm -rf ~/Applications/Emacs.app
 brew bundle --global --clean
 
 if [ -f ~/.emacs.d/.doomrc ]
@@ -37,9 +37,15 @@ then
 else
   echo "### Installing Doom ###" 
   rm -rf ~/.emacs.d
+  rm -rf ~/.doom.d
   git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
   ~/.emacs.d/bin/doom install
 fi
+
+echo "### Linking Emacs ###"
+cp -R /opt/homebrew/opt/emacs-mac/Emacs.app ~/Applications
+rm -rf  "${HOME}/.doom.d"
+ln -sf "${PWD}/machines/goodsprings/.doom.d" "${HOME}/.doom.d"
 
 echo "### Syncing Doom ###"
 ~/.emacs.d/bin/doom sync

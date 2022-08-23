@@ -32,6 +32,7 @@ brew "checkmake"
 brew "cmake"
 brew "universal-ctags"
 brew "clang-format"
+brew "gcc"
 
 # Photo Stuff
 cask "adobe-dng-converter"
@@ -47,7 +48,11 @@ cask "font-profont-nerd-font"
 cask "iterm2"
 cask "godot"
 cask "vagrant"
-cask "railwaycat/emacsmacport/emacs-mac"
+brew "railwaycat/emacsmacport/emacs-mac", args: [
+  "with-modules",
+  "with-native-comp",
+  "with-natural-title-bar",
+]
 
 # Gamer Stuff
 cask "discord"
