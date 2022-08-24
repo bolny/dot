@@ -1,3 +1,6 @@
+# -*- mode: ruby -*-
+# vi: ft=ruby
+
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -45,16 +48,27 @@ cask "iterm2"
 cask "godot"
 cask "vagrant"
 
-# Stuff for Doom
+######################
+# Stuff for Doom Emacs
 brew "railwaycat/emacsmacport/emacs-mac", args: [
   "with-modules",
   "with-native-comp",
   "with-natural-title-bar",
 ]
+
+# Core dependencies
 brew "fd"
 brew "rg"
 brew "coreutils"
 brew "gcc"
+
+# Stuff for org-mode
+cask "mactex"
+brew "gnuplot"
+
+# Terminal Emulator
+brew "libvterm"
+######################
 
 # Gamer Stuff
 cask "discord"
