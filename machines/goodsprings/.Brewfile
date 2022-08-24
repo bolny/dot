@@ -11,9 +11,6 @@ brew "nq"
 brew "entr"
 brew "ffmpeg"
 brew "pandoc"
-brew "fd"
-brew "rg"
-brew "coreutils"
 
 # Terminal Applications
 brew "lynx"
@@ -26,14 +23,6 @@ brew "mpv"
 brew "gh"
 brew "git"
 
-# Development tools
-brew "shellcheck"
-brew "checkmake"
-brew "cmake"
-brew "universal-ctags"
-brew "clang-format"
-brew "gcc"
-
 # Photo Stuff
 cask "adobe-dng-converter"
 cask "darktable"
@@ -43,16 +32,29 @@ cask "digikam"
 cask "calibre"
 
 # Developer Stuff
+brew "shellcheck"
+brew "checkmake"
+brew "cmake"
+brew "universal-ctags"
+brew "clang-format"
 cask "docker"
-cask "font-profont-nerd-font"
+cask "font-iosevka"
+cask "font-iosevka-aile"
+cask "font-iosevka-etoile"
 cask "iterm2"
 cask "godot"
 cask "vagrant"
+
+# Stuff for Doom
 brew "railwaycat/emacsmacport/emacs-mac", args: [
   "with-modules",
   "with-native-comp",
   "with-natural-title-bar",
 ]
+brew "fd"
+brew "rg"
+brew "coreutils"
+brew "gcc"
 
 # Gamer Stuff
 cask "discord"
