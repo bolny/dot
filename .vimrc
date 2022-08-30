@@ -42,4 +42,7 @@ if filereadable(expand("~/.vim/autoload/plug.vim"))
   call plug#end()
 endif
 
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
 
