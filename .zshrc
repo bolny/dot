@@ -28,6 +28,6 @@ alias ly='lynx -cfg ~/.lynx.cfg'
 alias se='duck'
 
 NL=$'\n'
-PS1="%n@%m %~${NL}> "
+PROMPT="%n@%m %~${NL}> "
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
