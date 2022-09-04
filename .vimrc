@@ -1,35 +1,45 @@
 set nocompatible
 
-set autoindent
-set autowrite
 set number
 set ruler
 set showmode
-
-set backupcopy=yes
+set laststatus=2
 
 syntax enable
 set background=dark
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-set nowrap
-set nofixendofline
-
 filetype plugin on
+set autoindent
 set smartindent
 set smarttab
-set foldmethod=manual
+
+set backupcopy=yes
 set clipboard=unnamed
 
-if filereadable(expand("~/.vim/autoload/plug.vim"))
-  call plug#begin()
+call plug#begin()
 
-  Plug 'editorconfig/editorconfig-vim'
-  Plug 'tpope/vim-surround'
-  Plug 'michaeljsmith/vim-indent-object'
+" Let a .editorconfig file set tabs/spaces, etc.
+Plug 'editorconfig/editorconfig-vim'
 
-  call plug#end()
-endif
+" Surround text objects with a character.
+Plug 'tpope/vim-surround'
+
+" Add command to comment lines (gc).
+Plug 'tpope/vim-commentary'
+
+" Allow plugins (surround) to repeat with .
+Plug 'tpope/vim-repeat'
+
+" Add indent levels as text objects.
+Plug 'michaeljsmith/vim-indent-object'
+
+" Add additonal predicates for text objects: next and last, as well as a few new
+" text objects like text delimeters (, and |).
+Plug 'wellle/targets.vim'
+
+" Align a text object around a given character.
+Plug 'junegunn/vim-easy-align'
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
+
+call plug#end()
