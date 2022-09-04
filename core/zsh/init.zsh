@@ -1,7 +1,8 @@
 #! /bin/zsh
 # shellcheck shell=bash
 
-autoload -U compinit; compinit
+autoload -U compinit
+compinit
 
 setopt INC_APPEND_HISTORY
 
@@ -24,10 +25,11 @@ alias gr='grep --color'
 alias gl='git ls-files'
 alias gg='git grep'
 alias lynx='lynx -cfg ~/.lynx.cfg'
-alias ly='lynx -cfg ~/.lynx.cfg'
+alias ly='lynx -cfg ~/.config/lynx/lynx.cfg'
 alias se='duck'
 
 NL=$'\n'
-PROMPT="%n@%m %~${NL}> "
+export PROMPT="%n@%m %~${NL}> "
 
+# shellcheck disable=SC1090
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local

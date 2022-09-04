@@ -1,11 +1,9 @@
-.PHONY: none goodsprings debian
-default: none
+.PHONY: core goodsprings
 
-none:
-	./setup
+default: core
 
-goodsprings:
-	./setup goodsprings
+core:
+	cd core && make
 
-debian:
-	./setup debian
+goodsprings: core
+	cd goodsprings && make

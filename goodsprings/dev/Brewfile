@@ -1,0 +1,19 @@
+# vi: ft=ruby
+
+# VCS
+brew "git"
+brew "gh"
+
+# Shell
+brew "shellcheck"
+brew "shfmt"
+brew "bashdb"
+
+# Make
+brew "checkmake"
+
+# C
+brew "clang-format"
+
+# Godot
+cask "godot"
