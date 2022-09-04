@@ -1,4 +1,4 @@
-.PHONY: all brew app dev term
+.PHONY: all brew app bin dev term
 
 default: all
 
@@ -9,6 +9,9 @@ brew:
 
 app:
 	cd app && make
+
+bin:
+	cd bin && make
 
 dev:
 	cd dev && make
