@@ -1,5 +1,4 @@
 #! /bin/zsh
-# shellcheck shell=bash
 
 autoload -U compinit
 compinit
@@ -11,10 +10,12 @@ PATH="${HOME}/.local/bin:${PATH}"
 
 export PATH
 
+export KEYTIMEOUT=1
+
 HISTFILE=~/.history
 HISTSIZE=50000
 
-set -o vi
+bindkey -v
 
 alias lynx='lynx -cfg ~/.lynx.cfg'
 alias grep='grep --color'
@@ -31,5 +32,16 @@ alias ly='lynx -cfg ~/.config/lynx/lynx.cfg'
 alias se='duck'
 alias sl='streamlink'
 
-NL=$'\n'
-export PROMPT="%n@%m %~${NL}> "
+# Set prompt with vi indicator
+function zle-line-init zle-keymap-select {
+    V=""
+    case $KEYMAP in
+        vicmd) V="N";;
+        *) V="I";;
+    esac
+    PROMPT="[${V}] %~ > "
+    zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
