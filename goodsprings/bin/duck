@@ -1,7 +1,0 @@
-#! /bin/bash
-
-if command -v lynx; then
-	lynx -cfg ~/.lynx.cfg "https://duck.com/lite?q=$*"
-else
-	echo "No browser found."
-fi

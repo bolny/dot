@@ -1,3 +1,0 @@
-#! /bin/bash
-
-tmux new-session -A -c "${HOME}/src/github.com/bolny/dot" -s 'dot'
