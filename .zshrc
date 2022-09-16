@@ -25,12 +25,11 @@ alias cp='cp -i'
 alias ll='ls -lahFG'
 alias mv='mv -i'
 alias rm='rm -i'
-alias gr='grep --color'
-alias gl='git ls-files'
 alias gg='git grep'
-alias ly='lynx -cfg ~/.config/lynx/lynx.cfg'
-alias se='duck'
-alias sl='streamlink'
+
+alias dw='duck'
+alias sz='zk_session'
+alias nn='note'
 
 # Set prompt with vi indicator
 function zle-line-init zle-keymap-select {

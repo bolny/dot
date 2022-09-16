@@ -1,0 +1,3 @@
+#! /bin/sh
+
+tmux new -As "zk" -c "${HOME}/src/github.com/bolny/zk"
