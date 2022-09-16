@@ -51,6 +51,7 @@ cask "calibre"
 
 # Writing
 brew "pandoc"
+cask "obsidian"
 
 # Video
 brew "ffmpeg"
@@ -62,6 +63,7 @@ brew "yt-dlp"
 cask "discord"
 cask "logitech-g-hub"
 cask "parsec"
+cask "openemu"
 
 # Web Stuff
 cask "google-chrome"
@@ -74,6 +76,5 @@ cask "lmms"
 cask "wacom-tablet"
 
 # Utilities
-cask "raycast"
 
 # vi: ft=ruby
