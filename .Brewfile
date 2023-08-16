@@ -1,39 +1,17 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-
-# Terminal
-cask "iterm2"
-brew "tmux"
-brew "entr"
-
-# Source code Management
-brew "git"
 
 # Developer Stuff
-brew "vim"
-brew "nvi"
-cask "docker"
-brew "universal-ctags"
-
-# SH
-brew "shellcheck"
-brew "shfmt"
-brew "bashdb"
-
-# Make
-brew "checkmake"
-
-# C
-brew "clang-format"
-
-# Photo Stuff
-cask "adobe-dng-converter"
+brew "nvim"
+brew "git"
+brew "tmux"
+brew "entr"
+brew "telnet"
 
 # Writing
 brew "pandoc"
+cask "mactex"
 
 # Video
 brew "ffmpeg"
@@ -44,11 +22,19 @@ brew "yt-dlp"
 # Gamer Stuff
 cask "discord"
 cask "parsec"
-cask "openemu"
 
 # Web Stuff
 cask "google-chrome"
-cask "tor-browser"
 cask "transmission"
+cask "bitwarden"
+cask "adguard"
 
-# vi: ft=ruby
+# OS Stuff
+cask "divvy"
+cask "appcleaner"
+cask "backblaze"
+cask "miniwol"
+
+# Art Stuff
+cask "adobe-dng-converter"
+cask "blender"
