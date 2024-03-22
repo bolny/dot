@@ -8,10 +8,25 @@ brew "git"
 brew "tmux"
 brew "entr"
 brew "telnet"
+brew "fd"
+brew "coreutils"
+brew "grep"
+brew "ripgrep"
+brew "rename"
+brew "wget"
+brew "node"
+brew "prettier"
+cask "iterm2"
+brew "python@3.11"
+brew "python@3.10"
+brew "streamlink"
+brew "docker"
+brew "docker-compose"
+brew "colima"
+cask "vscodium"
 
 # Writing
 brew "pandoc"
-cask "mactex"
 
 # Video
 brew "ffmpeg"
@@ -26,11 +41,9 @@ cask "parsec"
 # Web Stuff
 cask "google-chrome"
 cask "transmission"
-cask "bitwarden"
-cask "adguard"
+cask "firefox"
 
 # OS Stuff
-cask "divvy"
 cask "appcleaner"
 cask "backblaze"
 cask "miniwol"
@@ -38,3 +51,11 @@ cask "miniwol"
 # Art Stuff
 cask "adobe-dng-converter"
 cask "blender"
+
+# Fonts
+cask "font-source-code-pro"
+cask "font-source-sans-3"
+cask "font-source-serif-4"
+cask "font-cooper-hewitt"
+cask "font-charter"
+cask "font-ibm-plex"

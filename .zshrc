@@ -22,6 +22,7 @@ bindkey -e
 alias dot='git \
   --git-dir=${HOME}/Source/github.com/bolny/dot.git/ \
   --work-tree=${HOME}'
+alias venv='source .venv/bin/activate'
 
 alias cp='cp -i'
 alias ll='ls -lahFG'
@@ -29,4 +30,3 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias gg='git grep'
 alias brew='arch -arm64 brew'
-alias vi='nvi'

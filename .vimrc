@@ -15,11 +15,15 @@ set smarttab
 
 set backupcopy=yes
 set clipboard=unnamed
+set mouse=a
 
 call plug#begin()
 
 " Let a .editorconfig file set tabs/spaces, etc.
 Plug 'editorconfig/editorconfig-vim'
+
+" Let vim automatically determine file settings absent editorconfig
+Plug 'tpope/vim-sleuth'
 
 " Surround text objects with a character.
 Plug 'tpope/vim-surround'
@@ -41,5 +45,8 @@ Plug 'wellle/targets.vim'
 Plug 'junegunn/vim-easy-align'
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
+
+" Unifies navigating tmux and vim splits
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
