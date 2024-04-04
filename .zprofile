@@ -1,7 +1,7 @@
 #! /bin/zsh
 # shellcheck shell=bash
 
-export EDITOR=vim
+export EDITOR=vi
 
 PATH="/opt/homebrew/bin:${PATH}"
 PATH="/opt/homebrew/sbin:${PATH}"
