@@ -1,6 +1,6 @@
 [core]
 	excludesfile = /Users/bolny/.gitignore_global
-	editor = nvi
+	editor = vi
 
 [user]
 	name = Brendon O'Laney
