@@ -1,8 +1,10 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/cask-fonts"
 
 # Developer Stuff
+brew "starship"
 brew "nvim"
 brew "git"
 brew "tmux"
@@ -36,7 +38,6 @@ brew "streamlink"
 
 # Gamer Stuff
 cask "discord"
-cask "parsec"
 
 # Web Stuff
 cask "google-chrome"
@@ -50,7 +51,6 @@ cask "miniwol"
 
 # Art Stuff
 cask "adobe-dng-converter"
-cask "blender"
 
 # Fonts
 cask "font-source-code-pro"
@@ -59,3 +59,4 @@ cask "font-source-serif-4"
 cask "font-cooper-hewitt"
 cask "font-charter"
 cask "font-ibm-plex"
+cask "font-commit-mono-nerd-font"
