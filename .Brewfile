@@ -20,11 +20,9 @@ brew "prettier"
 cask "iterm2"
 brew "python@3.11"
 brew "python@3.10"
-brew "streamlink"
 brew "docker"
 brew "docker-compose"
 brew "colima"
-cask "vscodium"
 
 # Writing
 brew "pandoc"
@@ -34,6 +32,7 @@ brew "ffmpeg"
 cask "mpv"
 brew "mpv"
 brew "yt-dlp"
+brew "streamlink"
 
 # Gamer Stuff
 cask "discord"
