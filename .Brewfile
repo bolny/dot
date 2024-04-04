@@ -2,8 +2,10 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-fonts"
+tap "railwaycat/emacsmacport"
 
 # Developer Stuff
+brew "emacs-plus" "--with-modern-doom-icon" "--with-native-comp"
 brew "starship"
 brew "nvim"
 brew "git"

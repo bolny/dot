@@ -17,7 +17,7 @@ export GPG_TTY=$TTY
 HISTFILE=~/.history
 HISTSIZE=50000
 
-bindkey -e
+bindkey -v
 
 alias dot='git \
   --git-dir=${HOME}/Source/github.com/bolny/dot.git/ \

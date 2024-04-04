@@ -1,8 +1,0 @@
-#! /bin/sh
-
-NOTE_FILE="${HOME}/src/github.com/bolny/zk/inbox.md"
-
-cat >>"${NOTE_FILE}" <<EOF
-## $(date -Iminutes)
-$@
-EOF
