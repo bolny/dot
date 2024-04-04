@@ -30,3 +30,5 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias gg='git grep'
 alias brew='arch -arm64 brew'
+
+eval "$(starship init zsh)"
