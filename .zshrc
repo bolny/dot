@@ -33,7 +33,7 @@ alias gg='git grep'
 alias vi='vim'
 alias brew='arch -arm64 brew'
 
-if type "starship"
+if type "starship" > /dev/null
 then
     eval "$(starship init zsh)"
 fi
