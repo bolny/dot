@@ -28,6 +28,10 @@ alias ll='ls -lahFG'
 alias mv='mv -i'
 alias rm='rm -i'
 alias gg='git grep'
+alias vi='vim'
 alias brew='arch -arm64 brew'
 
-eval "$(starship init zsh)"
+if type "starship"
+then
+    eval "$(starship init zsh)"
+fi
