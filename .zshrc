@@ -7,11 +7,13 @@ setopt INC_APPEND_HISTORY
 
 PATH="${HOME}/.bin:${PATH}"
 PATH="${HOME}/.local/bin:${PATH}"
+TTY=$(tty)
+HOSTNAME=$(hostname)
 
 export PATH
 export KEYTIMEOUT=1
-TTY=$(tty)
 export GPG_TTY=$TTY
+export HOMEBREW_BUNDLE_FILE="${HOME}/.config/brewfile/${HOSTNAME}.Brewfile"
 
 HISTFILE=~/.history
 HISTSIZE=50000

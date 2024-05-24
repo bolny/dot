@@ -1,5 +1,4 @@
 #! /bin/zsh
-# shellcheck shell=bash
 
 export EDITOR=vi
 
