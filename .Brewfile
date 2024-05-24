@@ -18,10 +18,11 @@ brew "coreutils"
 brew "grep"
 brew "ripgrep"
 brew "rename"
+brew "shellcheck"
 brew "wget"
 brew "node"
 brew "prettier"
-cask "iterm2"
+cask "wezterm"
 brew "python@3.11"
 brew "python@3.10"
 brew "docker"
@@ -53,6 +54,7 @@ cask "miniwol"
 
 # Art Stuff
 cask "adobe-dng-converter"
+cask "freac"
 
 # Fonts
 cask "font-source-code-pro"
