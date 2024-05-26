@@ -1,13 +1,6 @@
 [core]
-	excludesfile = /Users/bolny/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = vi
-
-[user]
-	name = Brendon O'Laney
-	email = brendon@brendonolaney.com
-
-[github]
-	user = bolny
 
 [push]
 	default = current
