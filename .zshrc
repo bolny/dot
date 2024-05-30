@@ -30,8 +30,11 @@ alias ll='ls -lahFG'
 alias mv='mv -i'
 alias rm='trash'
 alias gg='git grep'
-alias vi='vim'
 alias brew='arch -arm64 brew'
+
+alias vi='vim'
+alias v='vim'
+alias t='tmux'
 
 if type "starship" > /dev/null
 then
