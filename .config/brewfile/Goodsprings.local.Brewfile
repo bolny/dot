@@ -1,8 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/cask-fonts"
-
 # Terminal Stuff
 brew "colima"
 brew "coreutils"
