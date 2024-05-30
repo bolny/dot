@@ -13,7 +13,7 @@ HOSTNAME=$(hostname)
 export PATH
 export KEYTIMEOUT=1
 export GPG_TTY=$TTY
-export HOMEBREW_BUNDLE_FILE="${HOME}/.config/brewfile/${HOSTNAME}.Brewfile"
+export HOMEBREW_BUNDLE_FILE_GLOBAL="${HOME}/.config/brewfile/${HOSTNAME}.Brewfile"
 
 HISTFILE=~/.history
 HISTSIZE=50000
