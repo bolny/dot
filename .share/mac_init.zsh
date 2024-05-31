@@ -89,6 +89,25 @@ homebrew_install_exec () {
     brew bundle --global
 }
 
+ssh_config_preview () {
+    echo "Add the following to ~/.ssh/config"
+    echo <<- EOF
+        Host *
+            UseKeychain yes
+            AddKeysToAgent yes
+            IdentityFile ~/.ssh/id_rsa
+    EOF
+}
+
+ssh_config_exec () {
+    cat <<- EOF > ~/.ssh/config
+        Host *
+            UseKeychain yes
+            AddKeysToAgent yes
+            IdentityFile ~/.ssh/id_rsa
+    EOF
+}
+
 echo "Initializing new computer."
 echo "==="
 
@@ -106,6 +125,17 @@ echo "\n\nInstall ssh public key in github"
 install_github_preview
 pause_until_enter
 install_github_exec
+
+echo "\n\nTODO: set up ~/.ssh/config"
+ssh_config_preview
+pause_until_enter
+ssh_config_exec
+echo << 'EOF' > ~/.ssh/config
+Host *
+    UseKeychain yes
+    AddKeysToAgent yes
+    IdentityFile ~/.ssh/id_rsa
+EOF
 
 echo "\n\nCreate source folders"
 folders_preview
