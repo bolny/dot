@@ -44,21 +44,15 @@ folders_exec () {
 
 clone_preview () {
     echo "I will execute:"
-    echo 'git clone --bare git@github.com:bolny/dot.git $HOME/Source/github.com/bolny/dot'
+    echo 'git clone --bare git@github.com:bolny/dot.git $HOME/Source/github.com/bolny/dot.git'
+    echo 'git --git-dir=$HOME/Source/github.com/bolny/dot.git/ --work-tree=$HOME reset --hard HEAD'
+    echo 'git --git-dir=$HOME/Source/github.com/bolny/dot.git/ --work-tree=$HOME config --local status.showUntrackedFiles no'
 }
 
 clone_exec () {
     git clone --bare git@github.com:bolny/dot.git $HOME/Source/github.com/bolny/dot
-}
-
-head_preview () {
-    echo "I will execute:"
-    echo 'git --git-dir=$HOME/Source/github.com/bolny/dot/ --work-tree=$HOME reset --hard HEAD'
-    echo "This is necessary because git thinks that the files missing are deletions"
-}
-
-head_exec () {
-    git --git-dir=$HOME/Source/github.com/bolny/dot/ --work-tree=$HOME reset --hard HEAD
+    git --git-dir=$HOME/Source/github.com/bolny/dot.git/ --work-tree=$HOME reset --hard HEAD
+    git --git-dir=$HOME/Source/github.com/bolny/dot.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
 }
 
 source_preview () {
@@ -81,11 +75,9 @@ mas_exec () {
 homebrew_install_preview () {
     echo "Executing:"
     echo 'brew bundle --global'
-    echo "twice (to install mas apps after mas is installed"
 }
 
 homebrew_install_exec () {
-    brew bundle --global
     brew bundle --global
 }
 
@@ -130,27 +122,16 @@ echo "\n\nTODO: set up ~/.ssh/config"
 ssh_config_preview
 pause_until_enter
 ssh_config_exec
-echo << 'EOF' > ~/.ssh/config
-Host *
-    UseKeychain yes
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_rsa
-EOF
 
 echo "\n\nCreate source folders"
 folders_preview
 pause_until_enter
 folders_exec
 
-echo "\n\nClone bare dot repo"
+echo "\n\nSet up dot files"
 clone_preview
 pause_until_enter
 clone_exec
-
-echo "\n\nReset dot repo to head."
-head_preview
-pause_until_enter
-head_exec
 
 echo "\n\nSource zshrc and zprofile."
 source_preview
