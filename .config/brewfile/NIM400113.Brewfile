@@ -12,7 +12,6 @@ brew "gpg"
 brew "grep"
 brew "lynx"
 brew "macos-trash"
-brew "mas"
 brew "mpv"
 brew "node"
 brew "pandoc"
@@ -36,7 +35,6 @@ cask "firefox"
 cask "google-chrome"
 cask "wezterm"
 cask "wacom-tablet"
-mas "Divvy", id: 413857545
 
 # Fonts
 cask "font-charter"
