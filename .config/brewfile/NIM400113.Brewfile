@@ -1,4 +1,5 @@
 # Terminal Stuff
+brew "bat"
 brew "colima"
 brew "coreutils"
 brew "docker"
@@ -32,7 +33,7 @@ brew "yt-dlp"
 cask "discord"
 cask "microsoft-edge"
 cask "firefox"
-cask "google-chrome"
+cask "rectangle"
 cask "wezterm"
 cask "wacom-tablet"
 
