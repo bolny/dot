@@ -37,7 +37,6 @@ cask "google-chrome"
 cask "wezterm"
 cask "wacom-tablet"
 mas "Divvy", id: 413857545
-mas "Microsoft To Do", id: 1274495053
 
 # Fonts
 cask "font-charter"
