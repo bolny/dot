@@ -100,6 +100,15 @@ ssh_config_exec () {
     EOF
 }
 
+vim_preview () {
+    echo "I will execute:"
+    echo 'vim -c "PlugInstall|qa!"'
+}
+
+vim_exec () {
+    vim -c "PlugInstall|qa!"
+}
+
 echo "Initializing new computer."
 echo "==="
 
@@ -137,6 +146,11 @@ echo "\n\nSource zshrc and zprofile."
 source_preview
 pause_until_enter
 source_exec
+
+echo "\n\nInstall vim plugins."
+vim_preview
+pause_until_enter
+vim_exec
 
 echo "\n\nSign in to Mac App Store"
 mas_preview
