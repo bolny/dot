@@ -6,7 +6,7 @@ set showmode
 set laststatus=2
 
 syntax enable
-set background=light
+set background=dark
 
 filetype plugin on
 set autoindent
