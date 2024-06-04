@@ -1,9 +1,6 @@
 # Terminal Stuff
 brew "bat"
-brew "colima"
 brew "coreutils"
-brew "docker"
-brew "docker-compose"
 brew "entr"
 brew "fd"
 brew "ffmpeg"
@@ -31,6 +28,7 @@ brew "yt-dlp"
 
 # Apps
 cask "discord"
+cask "docker"
 cask "microsoft-edge"
 cask "firefox"
 cask "rectangle"
