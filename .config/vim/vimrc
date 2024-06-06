@@ -4,6 +4,7 @@ set number
 set ruler
 set showmode
 set laststatus=2
+set nowrap
 
 syntax enable
 set background=dark
