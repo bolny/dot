@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local config = {}
 
-config.color_scheme = 'Everforest Light (Gogh)'
+config.color_scheme = 'Solarized Light (Gogh)'
 config.font = wezterm.font 'Drafting* Mono'
 config.font_size = 18
 config.use_fancy_tab_bar = false
