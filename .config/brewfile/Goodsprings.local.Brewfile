@@ -57,7 +57,6 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PiPifier", id: 1160374471
 mas "Pixelmator Pro", id: 1289583905
-mas "Raivo OTP", id: 1498497896
 mas "Things", id: 904280696
 
 # Fonts
