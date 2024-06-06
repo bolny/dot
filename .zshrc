@@ -15,10 +15,20 @@ export KEYTIMEOUT=1
 export GPG_TTY=$TTY
 export HOMEBREW_BUNDLE_FILE_GLOBAL="${HOME}/.config/brewfile/${HOSTNAME}.Brewfile"
 
+if type "vivid" > /dev/null
+then
+    export LS_COLORS="$(vivid generate solarized-light)"
+fi
+
 HISTFILE=~/.history
 HISTSIZE=50000
 
 bindkey -v
+
+if type "gls" > /dev/null
+then
+    alias ls='gls --color'
+fi
 
 alias dot='git \
   --git-dir=${HOME}/Source/github.com/bolny/dot.git/ \
@@ -35,6 +45,8 @@ alias brew='arch -arm64 brew'
 alias vi='vim'
 alias v='vim'
 alias t='tmux'
+
+alias idate='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 
 if type "starship" > /dev/null
 then

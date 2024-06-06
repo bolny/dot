@@ -23,6 +23,7 @@ brew "streamlink"
 brew "telnet"
 brew "tmux"
 brew "vim"
+brew "vivid"
 brew "wget"
 brew "yt-dlp"
 
