@@ -28,7 +28,7 @@ alias gg='git grep'
 alias vi='vim'
 alias brew='arch -arm64 brew'
 
-if type "starship" > /dev/null
+if type "starship" 2&> /dev/null
 then
     eval "$(starship init bash)"
 fi
