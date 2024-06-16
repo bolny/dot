@@ -20,15 +20,21 @@ alias dot='git \
   --work-tree=${HOME}'
 alias venv='source .venv/bin/activate'
 
-alias cp='cp -i'
 alias ll='ls -lahFG'
+alias cp='cp -i'
 alias mv='mv -i'
-alias rm='trash'
+
+if command -v trash > /dev/null 2>&1
+then
+    alias rm='trash'
+else
+    alias rm='rm -i'
+fi
 alias gg='git grep'
 alias vi='vim'
 alias brew='arch -arm64 brew'
 
-if type "starship" 2&> /dev/null
+if command -v starship > /dev/null 2>&1
 then
     eval "$(starship init bash)"
 fi
