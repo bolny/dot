@@ -33,8 +33,10 @@ cask "docker"
 cask "microsoft-edge"
 cask "firefox"
 cask "rectangle"
+cask "visual-studio-code"
 cask "wezterm"
 cask "wacom-tablet"
+cask "logitech-camera-settings"
 
 # Fonts
 cask "font-charter"
