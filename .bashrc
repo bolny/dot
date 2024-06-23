@@ -32,6 +32,8 @@ else
 fi
 alias gg='git grep'
 alias vi='vim'
+alias v='vim'
+alias t='tmux'
 alias brew='arch -arm64 brew'
 
 if command -v starship > /dev/null 2>&1
