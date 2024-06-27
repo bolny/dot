@@ -1,5 +1,11 @@
 #! /bin/zsh
 
+# Use homebrew autocompletion
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+
 # Enable built in autocompletion
 autoload -U compinit
 compinit
