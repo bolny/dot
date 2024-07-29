@@ -13,7 +13,6 @@ brew "grep"
 brew "lynx"
 brew "macos-trash"
 brew "mas"
-brew "mpv"
 brew "node"
 brew "pandoc"
 brew "plantuml"
@@ -26,6 +25,7 @@ brew "starship"
 brew "streamlink"
 brew "telnet"
 brew "tmux"
+brew "tmuxinator"
 brew "vim"
 brew "wget"
 brew "yt-dlp"
@@ -47,15 +47,13 @@ cask "rustdesk"
 cask "transmission"
 cask "wezterm"
 cask "steermouse"
+cask "logitech-camera-settings"
+
 mas "AdGuard for Safari", id: 1440147259
 mas "Bitwarden", id: 1352778147
-mas "Dark Reader for Safari", id: 1438243180
-mas "Divvy", id: 413857545
-mas "Hush", id: 1544743900
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "PiPifier", id: 1160374471
 mas "Pixelmator Pro", id: 1289583905
 mas "Things", id: 904280696
 
