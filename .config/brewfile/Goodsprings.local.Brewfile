@@ -61,7 +61,6 @@ mas "Things", id: 904280696
 cask "font-charter"
 cask "font-commit-mono-nerd-font"
 cask "font-cooper-hewitt"
-cask "font-ibm-plex"
 cask "font-source-code-pro"
 cask "font-source-sans-3"
 cask "font-source-serif-4"
