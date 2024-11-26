@@ -45,11 +45,6 @@ vim_preview
 pause_until_enter
 vim_exec
 
-echo "\n\nSign in to Mac App Store"
-mas_preview
-pause_until_enter
-mas_exec
-
 echo "\n\nInstall homebrew packages."
 homebrew_install_preview
 pause_until_enter

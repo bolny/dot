@@ -64,14 +64,6 @@ source_exec () {
     source ~/.zshrc; source ~/.zprofile
 }
 
-mas_preview () {
-    echo "sign into the mac app store please."
-}
-
-mas_exec () {
-    echo "proceeding"
-}
-
 homebrew_install_preview () {
     echo "Executing:"
     echo 'brew bundle --global'
