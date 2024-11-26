@@ -42,6 +42,7 @@ cask "iterm2"
 cask "wacom-tablet"
 cask "logitech-camera-settings"
 cask "rectangle"
+cask "obs"
 
 # Fonts
 cask "font-charter"
