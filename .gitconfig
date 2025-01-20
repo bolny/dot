@@ -6,7 +6,12 @@
 	default = current
 
 [pull]
-	deafault = current
+	default = current
+	rebase = true
 
 [init]
 	defaultBranch = main
+[user]
+	name = Brendon O'Laney
+[help]
+	autocorrect = prompt
