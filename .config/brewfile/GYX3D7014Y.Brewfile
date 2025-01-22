@@ -29,6 +29,7 @@ brew "telnet"
 brew "tmux"
 brew "tmuxinator"
 brew "universal-ctags"
+brew "uv"
 brew "vim"
 brew "vivid"
 brew "wget"
@@ -36,13 +37,14 @@ brew "yt-dlp"
 
 # Apps
 cask "microsoft-edge"
-cask "pgadmin4"
+cask "dbeaver-community"
 cask "visual-studio-code"
 cask "iterm2"
 cask "wacom-tablet"
 cask "logitech-camera-settings"
 cask "rectangle"
 cask "obs"
+cask "dteoh-devdocs"
 
 # Fonts
 cask "font-charter"
