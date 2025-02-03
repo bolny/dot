@@ -20,6 +20,7 @@ set mouse=a
 
 call plug#begin()
 
+" Uses ANSI colorscheme
 colorscheme dim
 
 " Let a .editorconfig file set tabs/spaces, etc.
@@ -51,5 +52,27 @@ xmap ga <Plug>(EasyAlign)
 
 " Unifies navigating tmux and vim splits
 Plug 'christoomey/vim-tmux-navigator'
+
+" Auto close parentheses
+Plug 'cohama/lexima.vim'
+
+" Auto close tags
+Plug 'alvan/vim-closetag'
+
+" File tree
+Plug 'preservim/nerdtree'
+
+" Git support
+Plug 'tpope/vim-fugitive'
+
+" Git line changes
+Plug 'airblade/vim-gitgutter'
+
+" Syntax and format checker
+Plug 'dense-analysis/ale'
+
+" FZF integration
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()

@@ -6,6 +6,18 @@ then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
 
+# Enable tmuxination autocompletion
+if type "tmuxinator" &>/dev/null
+then
+    eval "$(tmuxinator completions zsh)"
+fi
+
+# Enable fzf autocompletion
+if type "fzf" &>/dev/null
+then
+    source <(fzf --zsh)
+fi
+
 # Enable built in autocompletion
 autoload -U compinit
 compinit
@@ -34,22 +46,8 @@ export HOMEBREW_BUNDLE_FILE_GLOBAL="${HOME}/.config/brewfile/${HOSTNAME}.Brewfil
 # changing tmux panes.
 export KEYTIMEOUT=1
 
-# Generate usuable LS_COLORS for GNU and compatible utilities (Mostly FD)
-if type "vivid" > /dev/null
-then
-    export LS_COLORS="$(vivid generate solarized-light)"
-fi
-
 # Use vim style keybinds.
 bindkey -v
-
-# Use GNU ls instead of BSD ls for the aforementioned color support. BSD ls uses
-# ansi colors like it should, but I kind of like the look of a properly themed
-# GNU ls better.
-if type "gls" > /dev/null
-then
-    alias ls='gls --color'
-fi
 
 # Manage dotfiles in git.
 alias dot='git \
@@ -57,23 +55,11 @@ alias dot='git \
   --work-tree=${HOME}'
 
 # If I have to any of these out one more time I will lose my mind.
-alias venv='source .venv/bin/activate' # python virtual environments.
 alias ll='ls -lahFG' # Is this compatible with gls?
 alias brew='arch -arm64 brew' # Make homebrew use arm64 since I have no Intel
 
-# I have definitely accidentally deleted things before.
-alias cp='cp -i'
-alias mv='mv -i'
-if type "trash" > /dev/null
-then
-    alias rm='trash'
-else
-    alias rm='rm -i'
-fi
-
-# BSD date doesn't have iso8601 output. This simulates that. If I was smart I'd
-# use gdate -I.
-alias idate='date -u +"%Y-%m-%dT%H:%M:%SZ"'
+# BSD date doesn't have iso8601 output.
+alias isodate='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 
 # Just some useful shorcuts
 alias gg='git grep' # limit grep to files under version control.
