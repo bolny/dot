@@ -53,6 +53,7 @@ cask "ollama"
 # Fonts
 cask "font-charter"
 cask "font-commit-mono-nerd-font"
+cask "font-departure-mono-nerd-font"
 cask "font-cooper-hewitt"
 cask "font-source-code-pro"
 cask "font-source-sans-3"
