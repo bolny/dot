@@ -49,6 +49,7 @@ cask "rectangle"
 cask "obs"
 cask "dteoh-devdocs"
 cask "ollama"
+cask "basictex"
 
 # Fonts
 cask "font-charter"
