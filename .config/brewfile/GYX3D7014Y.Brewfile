@@ -50,6 +50,7 @@ cask "obs"
 cask "dteoh-devdocs"
 cask "ollama"
 cask "basictex"
+cask "figma"
 
 # Fonts
 cask "font-charter"
