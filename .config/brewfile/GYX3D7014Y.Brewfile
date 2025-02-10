@@ -1,3 +1,5 @@
+tap "nikitabobko/tap"
+
 # Terminal Stuff
 brew "bat"
 brew "colima"
@@ -51,6 +53,7 @@ cask "obs"
 cask "dteoh-devdocs"
 cask "basictex"
 cask "figma"
+cask "aerospace"
 
 # Fonts
 cask "font-charter"
@@ -61,3 +64,27 @@ cask "font-source-code-pro"
 cask "font-source-sans-3"
 cask "font-source-serif-4"
 cask "font-eldur"
+
+# VSCode extensions
+
+vscode "aidenoah.punk-hacking"
+vscode "bierner.markdown-mermaid"
+vscode "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+vscode "charliermarsh.ruff"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-github-actions"
+vscode "maattdd.gitless"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-edgedevtools.vscode-edge-devtools"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode.live-server"
+vscode "orta.vscode-jest"
+vscode "ryanluker.vscode-coverage-gutters"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "streetsidesoftware.code-spell-checker-canadian-english"
+vscode "vscodevim.vim"
