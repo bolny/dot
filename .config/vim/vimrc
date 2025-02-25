@@ -21,7 +21,6 @@ set mouse=a
 call plug#begin()
 
 " Uses ANSI colorscheme
-colorscheme dim
 
 " Let a .editorconfig file set tabs/spaces, etc.
 Plug 'editorconfig/editorconfig-vim'
