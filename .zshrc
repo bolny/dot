@@ -6,12 +6,6 @@ then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
 
-# Enable tmuxination autocompletion
-if type "tmuxinator" &>/dev/null
-then
-    eval "$(tmuxinator completions zsh)"
-fi
-
 # Enable fzf autocompletion
 if type "fzf" &>/dev/null
 then
