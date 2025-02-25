@@ -56,14 +56,7 @@ cask "figma"
 cask "aerospace"
 
 # Fonts
-cask "font-charter"
-cask "font-commit-mono-nerd-font"
-cask "font-departure-mono-nerd-font"
-cask "font-cooper-hewitt"
-cask "font-source-code-pro"
-cask "font-source-sans-3"
-cask "font-source-serif-4"
-cask "font-eldur"
+cask "font-hack-nerd-font"
 
 # VSCode extensions
 
