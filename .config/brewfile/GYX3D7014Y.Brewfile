@@ -16,7 +16,6 @@ brew "gpg"
 brew "grep"
 brew "fzf"
 brew "libpq", link: true
-brew "llama.cpp"
 brew "lynx"
 brew "macos-trash"
 brew "mpv"
@@ -56,7 +55,7 @@ cask "figma"
 cask "aerospace"
 
 # Fonts
-cask "font-hack-nerd-font"
+cask "font-departure-mono-nerd-font"
 
 # VSCode extensions
 
@@ -68,6 +67,7 @@ vscode "esbenp.prettier-vscode"
 vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
+vscode "github.vscode-pull-request-github"
 vscode "maattdd.gitless"
 vscode "mechatroner.rainbow-csv"
 vscode "ms-azuretools.vscode-docker"
