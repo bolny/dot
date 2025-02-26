@@ -43,11 +43,6 @@ export KEYTIMEOUT=1
 # Use vim style keybinds.
 bindkey -v
 
-# Manage dotfiles in git.
-alias dot='git \
-  --git-dir=${HOME}/Source/github.com/bolny/dot.git/ \
-  --work-tree=${HOME}'
-
 # If I have to any of these out one more time I will lose my mind.
 alias ll='ls -lahFG' # Is this compatible with gls?
 alias brew='arch -arm64 brew' # Make homebrew use arm64 since I have no Intel
