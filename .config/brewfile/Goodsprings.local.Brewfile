@@ -49,8 +49,9 @@ cask "steermouse"
 cask "logitech-camera-settings"
 cask "stolendata-mpv"
 cask "vscodium"
-cask "ollama"
 cask "basictex"
+cask "diffusionbee"
+cask "itermai"
 
 mas "AdGuard for Safari", id: 1440147259
 mas "Bitwarden", id: 1352778147
