@@ -58,7 +58,6 @@ cask "font-departure-mono-nerd-font"
 
 # VSCode extensions
 
-vscode "aidenoah.punk-hacking"
 vscode "bierner.markdown-mermaid"
 vscode "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
 vscode "charliermarsh.ruff"
