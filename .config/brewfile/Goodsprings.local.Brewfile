@@ -1,10 +1,11 @@
+tap "nikitabobko/tap"
+
 # Terminal Stuff
 brew "bat"
 brew "colima"
 brew "coreutils"
 brew "docker"
 brew "docker-compose"
-brew "delta"
 brew "entr"
 brew "fd"
 brew "ffmpeg"
@@ -42,16 +43,16 @@ cask "discord"
 cask "foobar2000"
 cask "freac"
 cask "musicbrainz-picard"
-cask "rustdesk"
 cask "transmission"
 cask "iterm2"
+cask "itermai"
 cask "steermouse"
 cask "logitech-camera-settings"
 cask "stolendata-mpv"
 cask "vscodium"
 cask "basictex"
 cask "diffusionbee"
-cask "itermai"
+cask "aerospace"
 
 mas "AdGuard for Safari", id: 1440147259
 mas "Bitwarden", id: 1352778147
