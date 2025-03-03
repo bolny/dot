@@ -18,7 +18,7 @@ brew "libpq", link: true
 brew "lynx"
 brew "macos-trash"
 brew "mpv"
-brew "node"
+brew "nvm"
 brew "ollama"
 brew "openshift-cli"
 brew "pandoc"
@@ -58,6 +58,8 @@ cask "font-departure-mono-nerd-font"
 
 # VSCode extensions
 
+vscode "orta.vscode-jest"
+vscode "vitest.explorer"
 vscode "bierner.markdown-mermaid"
 vscode "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
 vscode "charliermarsh.ruff"
