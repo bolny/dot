@@ -36,6 +36,7 @@ brew "wget"
 brew "yt-dlp"
 
 # Apps
+cask "trex"
 cask "adobe-dng-converter"
 cask "calibre"
 cask "chatterino"
