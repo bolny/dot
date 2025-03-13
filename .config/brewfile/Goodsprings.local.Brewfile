@@ -53,7 +53,7 @@ cask "stolendata-mpv"
 cask "vscodium"
 cask "basictex"
 cask "diffusionbee"
-cask "aerospace"
+cask "rectangle"
 
 mas "AdGuard for Safari", id: 1440147259
 mas "Bitwarden", id: 1352778147
