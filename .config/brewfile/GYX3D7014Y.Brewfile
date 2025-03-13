@@ -1,5 +1,3 @@
-tap "nikitabobko/tap"
-
 # Terminal Stuff
 brew "bat"
 brew "colima"
@@ -51,7 +49,7 @@ cask "obs"
 cask "dteoh-devdocs"
 cask "basictex"
 cask "figma"
-cask "aerospace"
+cask "rectangle"
 
 # Fonts
 cask "font-departure-mono-nerd-font"
