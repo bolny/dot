@@ -1,5 +1,3 @@
-tap "nikitabobko/tap"
-
 # Terminal Stuff
 brew "bat"
 brew "colima"
