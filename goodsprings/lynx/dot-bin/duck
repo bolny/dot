@@ -1,0 +1,7 @@
+#! /bin/bash
+
+if command -v lynx; then
+	lynx -vikeys "https://duck.com/lite?q=$*"
+else
+	echo "No browser found."
+fi

@@ -1,0 +1,57 @@
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vi
+	fsmonitor = true
+	untackedCache = true
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = version:refname
+
+[column]
+	ui = auto
+
+[commit]
+	verbose = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+
+[pull]
+	default = current
+	rebase = true
+	ff = only
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[init]
+	defaultBranch = main
+[user]
+	name = Brendon O'Laney
+[help]
+	autocorrect = prompt
