@@ -35,6 +35,7 @@ alias vi='vim'
 alias v='vim'
 alias t='tmux'
 alias brew='arch -arm64 brew'
+alias lynx='lynx -vikeys'
 
 if command -v starship > /dev/null 2>&1
 then

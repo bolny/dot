@@ -55,7 +55,7 @@ alias gg='git grep' # limit grep to files under version control.
 alias vi='vim'
 alias v='vim'
 alias t='tmux'
-alias mux='tmuxinator'
+alias lynx='lynx -vikeys'
 
 # Starship is the least worst prompt I've seen.
 if type "starship" > /dev/null
