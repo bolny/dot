@@ -31,9 +31,7 @@ export PATH
 TTY=$(tty)
 export GPG_TTY=$TTY
 
-# Use machine local homebrew bundle files
-HOSTNAME=$(hostname)
-export HOMEBREW_BUNDLE_FILE_GLOBAL="${HOME}/.config/brewfile/${HOSTNAME}.Brewfile"
+export HOMEBREW_BUNDLE_FILE_GLOBAL="${HOME}/.config/homebrew/Brewfile"
 
 # This reduces the timeout when sending multiple control characters to the
 # terminal. I have it set this way so that I can start typing more quickly after
