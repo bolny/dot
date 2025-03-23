@@ -32,6 +32,8 @@ brew "vim"
 brew "volta"
 brew "wget"
 brew "yt-dlp"
+brew "helix"
+brew "nvi"
 
 # Apps
 cask "trex"
