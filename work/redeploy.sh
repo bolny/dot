@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOTFILES_DIR=~/Source/github.com/bolny/dot/goodsprings
+DOTFILES_DIR=~/Source/github.com/bolny/dot/work
 TARGET_DIR=~
 
 cd "$DOTFILES_DIR" || exit
