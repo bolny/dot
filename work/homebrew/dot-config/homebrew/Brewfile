@@ -13,6 +13,7 @@ brew "git"
 brew "gpg"
 brew "grep"
 brew "helix"
+brew "kubectl"
 brew "libpq", link: true
 brew "lynx"
 brew "macos-trash"
