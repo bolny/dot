@@ -5,6 +5,7 @@ brew "bat"
 brew "colima", restart_service: :changed
 brew "cmake"
 brew "coreutils"
+brew "delta"
 brew "docker"
 brew "docker-compose"
 brew "entr"
