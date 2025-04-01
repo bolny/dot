@@ -11,6 +11,7 @@ brew "docker-compose"
 brew "entr"
 brew "eza"
 brew "fd"
+brew "fish"
 brew "fzf"
 brew "gh"
 brew "git"
@@ -43,6 +44,7 @@ brew "vivid"
 brew "volta"
 brew "wget"
 brew "yt-dlp"
+brew "zoxide"
 
 brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
 
