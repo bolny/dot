@@ -5,6 +5,6 @@ export EDITOR=vi
 PATH="/opt/homebrew/bin:${PATH}"
 PATH="/opt/homebrew/sbin:${PATH}"
 PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
-PATH="${HOME}/.emacs.d/bin:${PATH}"
+PATH="${HOME}/.config/emacs/bin:${PATH}"
 
 export PATH
