@@ -1,12 +1,15 @@
+tap "d12frosted/emacs-plus"
+
 # Terminal Stuff
 brew "bat"
-brew "colima"
+brew "colima", restart_service: :changed
+brew "cmake"
 brew "coreutils"
 brew "docker"
 brew "docker-compose"
 brew "entr"
+brew "eza"
 brew "fd"
-brew "ffmpeg"
 brew "fzf"
 brew "gh"
 brew "git"
@@ -18,7 +21,6 @@ brew "kubectl"
 brew "libpq", link: true
 brew "lynx"
 brew "macos-trash"
-brew "mpv"
 brew "nvi"
 brew "ollama"
 brew "openshift-cli"
@@ -33,7 +35,6 @@ brew "stow"
 brew "streamlink"
 brew "telnet"
 brew "tmux"
-brew "tmuxinator"
 brew "universal-ctags"
 brew "uv"
 brew "vim"
@@ -41,6 +42,8 @@ brew "vivid"
 brew "volta"
 brew "wget"
 brew "yt-dlp"
+
+brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
 
 # Apps
 cask "basictex"
@@ -58,6 +61,7 @@ cask "wacom-tablet"
 
 # Fonts
 cask "font-departure-mono-nerd-font"
+cask "font-charter"
 
 # VSCode extensions
 
