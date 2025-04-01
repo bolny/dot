@@ -51,9 +51,6 @@ Plug 'junegunn/vim-easy-align'
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
-" Unifies navigating tmux and vim splits
-Plug 'christoomey/vim-tmux-navigator'
-
 " Auto close parentheses
 Plug 'cohama/lexima.vim'
 
