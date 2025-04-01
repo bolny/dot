@@ -1,5 +1,4 @@
 tap "d12frosted/emacs-plus"               # Enhanced Emacs
-tap "homebrew/core"
 
 brew "bat"                                # Enhanced cat.
 brew "cmake"                              # Lots of source needs it.
