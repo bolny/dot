@@ -9,8 +9,8 @@
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 
-;; Start Emacs maximized.
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; Uncomment to start Emacs maximized.
+;;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
