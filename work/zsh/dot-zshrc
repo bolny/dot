@@ -60,3 +60,10 @@ if type "starship" > /dev/null
 then
     eval "$(starship init zsh)"
 fi
+
+# ls colors for various commands
+if type "vivid" > /dev/null
+then
+    LS_COLORS=$(vivid generate solarized-light)
+    export LS_COLORS
+fi
