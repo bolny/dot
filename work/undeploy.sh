@@ -6,5 +6,5 @@ TARGET_DIR=~
 cd "$DOTFILES_DIR" || exit
 
 for dir in */; do
-    stow -D -v --dotfiles -t "$TARGET_DIR" "${dir%/}"
+    stow --delete --verbose --dotfiles --target="$TARGET_DIR" "${dir%/}"
 done
