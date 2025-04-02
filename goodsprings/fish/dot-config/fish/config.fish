@@ -52,7 +52,8 @@ if status is-interactive
   set -x PATH "$HOME"/.local/bin $PATH
 
   # vi keybindings
-  set -g fish_key_bindings fish_vi_key_bindings
+  # Commented because emacs bindings are preferable when using vterm.
+  #set -g fish_key_bindings fish_vi_key_bindings
 
   # useful aliases
   alias l="eza"           # List files
