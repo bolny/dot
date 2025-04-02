@@ -9,8 +9,8 @@
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 
-;; Uncomment to start Emacs maximized.
-;;(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; Start Emacs maximized.
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -82,5 +82,6 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; Use fish shell for vterm.
 (after! vterm
   (setq vterm-shell "/opt/homebrew/bin/fish"))

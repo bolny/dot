@@ -37,6 +37,7 @@ brew "tmux"                               # Persistent sessions.
 brew "universal-ctags"                    # For the times I don't have an LSP.
 brew "uv"                                 # Python runner and venv manager.
 brew "vim"                                # My go to text editor.
+brew "vivid"                              # Generate sane LS_COLORS
 brew "volta"                              # Node runner.
 brew "wget"                               # File downloader.
 brew "yt-dlp"                             # Youtube Downloader.
@@ -53,8 +54,6 @@ cask "chatterino"                # Much better than the twitch web interface.
 cask "discord"                   # It's discord.
 cask "foobar2000"                # Play music files.
 cask "freac"                     # Audio transcoding.
-cask "iterm2"                    # Decent terminal emulator.
-cask "itermai"                   # Query an LLM for shell commands.
 cask "logitech-camera-settings"  # Configure my webcam.
 cask "musicbrainz-picard"        # Tag my music.
 cask "rectangle"                 # Window Manager.
