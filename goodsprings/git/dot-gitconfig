@@ -3,6 +3,7 @@
 	editor = vi
 	fsmonitor = true
 	untackedCache = true
+	pager = delta
 
 [branch]
 	sort = -committerdate
@@ -17,7 +18,7 @@
 	verbose = true
 
 [merge]
-	conflictstyle = zdiff3
+	conflictStyle = zdiff3
 
 [fetch]
 	prune = true
@@ -55,3 +56,7 @@
 	name = Brendon O'Laney
 [help]
 	autocorrect = prompt
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true

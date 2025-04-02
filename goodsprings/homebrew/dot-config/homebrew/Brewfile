@@ -1,13 +1,15 @@
 tap "d12frosted/emacs-plus"               # Enhanced Emacs
 
-brew "bat"                                # Enhanced cat.
+brew "bat"                                # Ergonomic cat.
 brew "cmake"                              # Lots of source needs it.
 brew "colima", restart_service: :changed  # Alternative to Docker Desktop.
 brew "coreutils"                          # GNU coreutils.
+brew "delta"                              # Ergonomic diff.
 brew "entr"                               # Run processes on file change.
 brew "eza"                                # Ergonomic ls replacement.
 brew "fd"                                 # Ergonomic alternative to find.
 brew "ffmpeg"                             # Video and Audio manipulation.
+brew "fish"                               # Ergonomic shell.
 brew "fzf"                                # General fuzzy finder.
 brew "gh"                                 # Github client.
 brew "git"                                # More up to date than xcode git.
@@ -19,6 +21,7 @@ brew "mas"                                # Install from Mac App Store.
 brew "nvi"                                # Sometimes I like to use vi.
 brew "ollama"                             # Run LLMs.
 brew "pandoc"                             # Universal document converter.
+brew "pass"                               # Standard password manager.
 brew "plantuml"                           # Generate UML diagrams from code.
 brew "podman"                             # Replacement for docker.
 brew "podman-compose"                     # Replacement for docker-compose.
@@ -31,11 +34,13 @@ brew "stow"                               # I use this to manage dotfiles.
 brew "streamlink"                         # Watch videos in mpv.
 brew "telnet"                             # Mostly for nethack.
 brew "tmux"                               # Persistent sessions.
+brew "universal-ctags"                    # For the times I don't have an LSP.
 brew "uv"                                 # Python runner and venv manager.
 brew "vim"                                # My go to text editor.
 brew "volta"                              # Node runner.
 brew "wget"                               # File downloader.
 brew "yt-dlp"                             # Youtube Downloader.
+brew "zoxide"                             # Ergonomic cd.
 
 # The one true operating system.
 brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
