@@ -84,3 +84,7 @@
 
 ;; set yaml mode for yml files.
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
+;; Use fish shell for vterm.
+(after! vterm
+  (setq vterm-shell "/opt/homebrew/bin/fish"))

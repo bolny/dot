@@ -51,9 +51,6 @@ if status is-interactive
   set -x PATH "$HOME"/.bin $PATH
   set -x PATH "$HOME"/.local/bin $PATH
 
-  # vi keybindings
-  set -g fish_key_bindings fish_vi_key_bindings
-
   # useful aliases
   alias l="eza"           # List files
   alias t="eza --tree"    # list files as Tree
