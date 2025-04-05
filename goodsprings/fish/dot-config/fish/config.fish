@@ -25,11 +25,6 @@ if status is-interactive
     starship init fish | source
   end
 
-  # Set up zoxide
-  if type -q zoxide
-    zoxide init fish | source
-  end
-
   # Set up ls colorscheme
   if type -q vivid
     set -x LS_COLORS (vivid generate solarized-light)
@@ -37,6 +32,57 @@ if status is-interactive
 
   # Set up bat theme to provide syntax highlighting to terminal programs.
   set -x BAT_THEME "Solarized (light)"
+
+  if type -q zoxide
+    zoxide init fish | source
+    alias cd="z"            # Use zoxide instead of cd
+  end
+
+  if type -q eza
+    alias ls="eza"          # Use eza instead of ls
+    alias tree="eza --tree" # Use eza instead of tree
+  end
+
+  if type -q rg
+    alias grep="rg"        # Use rg instead of grep
+  end
+
+  if type -q fd
+    alias find="fd"        # Use fd instead of find
+  end
+
+  if type -q bat
+    alias cat="bat"        # Use bat instead of cat
+  end
+
+  if type -q delta
+    alias diff="delta"     # use delta instead of diff
+  end
+
+  if type -q trash
+    function rm
+      if test "$argv[1]" = "-rf" -o "$argv[1]" = "-fr"
+        # Handle rm -rf by calling trash instead
+        trash $argv[2..-1]
+      else
+        # Handle other rm commands by calling trash
+        trash $argv
+      end
+    end
+  end
+
+  # useful aliases
+  alias l="eza"           # List files
+  alias t="eza --tree"    # list files as Tree
+  alias w="lynx -vikeys"  # Web browse
+  alias q="duck"          # Query search engine
+  alias g="git"           # source Gontrol
+  alias s="rg"            # Search inside files
+  alias f="fd"            # Find files
+  alias c="bat"           # Cat file
+  alias v="vim"           # View file in editor
+  alias d="delta"         # Diff files
+  alias r="trash"         # Removes file
 
   # Global python provided by uv
   # Implement when https://github.com/astral-sh/uv/issues/7377 is resolved.
@@ -50,21 +96,4 @@ if status is-interactive
   # Personal bins
   set -x PATH "$HOME"/.bin $PATH
   set -x PATH "$HOME"/.local/bin $PATH
-
-  # vi keybindings
-  # Commented because emacs bindings are preferable when using vterm.
-  #set -g fish_key_bindings fish_vi_key_bindings
-
-  # useful aliases
-  alias l="eza"           # List files
-  alias t="eza --tree"    # list files as Tree
-  alias w="lynx -vikeys"  # Web browse
-  alias q="duck"          # Query search engine
-  alias g="git"           # source Gontrol
-  alias s="rg"            # Search inside files
-  alias f="fd"            # Find files
-  alias c="bat"           # Cat file
-  #alias z="zoxide"        # ChangeZ directory
-  alias v="vim"           # View file in editor
-  alias d="delta"         # Diff files
 end
