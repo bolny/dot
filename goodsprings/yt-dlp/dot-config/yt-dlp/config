@@ -1,3 +1,2 @@
+# Select the best available MP4 that is 1440p or smaller.
 -f "bv*[ext=mp4][height<=1440]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"
---cookies-from-browser safari
---mark-watched
