@@ -96,7 +96,7 @@
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
        lookup              ; navigate your code and its documentation
-       lsp                 ; M-x vscode
+       ;;lsp               ; M-x vscode
        magit               ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
@@ -144,7 +144,6 @@
        ;;json              ; At least it ain't XML
        ;;(java +lsp)       ; the poster child for carpal tunnel syndrome
        (javascript
-        +lsp
         +treesitter)       ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
