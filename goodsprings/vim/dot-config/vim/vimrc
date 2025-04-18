@@ -24,6 +24,8 @@ call plug#begin()
 " https://github.com/jeffkreeftmeijer/vim-dim
 colorscheme dim
 
+runtime ftplugin/man.vim
+
 " Let a .editorconfig file set tabs/spaces, etc.
 Plug 'editorconfig/editorconfig-vim'
 

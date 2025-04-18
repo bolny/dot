@@ -1,6 +1,7 @@
 tap "d12frosted/emacs-plus"               # Enhanced Emacs
 
 brew "bat"                                # Ergonomic cat.
+brew "clang-format"                       # C language formatter
 brew "cmake"                              # Lots of source needs it.
 brew "colima", restart_service: :changed  # Alternative to Docker Desktop.
 brew "coreutils"                          # GNU coreutils.
@@ -13,6 +14,7 @@ brew "fish"                               # Ergonomic shell.
 brew "fzf"                                # General fuzzy finder.
 brew "gh"                                 # Github client.
 brew "git"                                # More up to date than xcode git.
+brew "glslang"                            # Shader language validator
 brew "gpg"                                # For generating public keys.
 brew "helix"                              # Cool litted text editor.
 brew "lynx"                               # DDG stuff from the console.
@@ -29,6 +31,7 @@ brew "qemu"                               # For running virtual machines.
 brew "rename"                             # Bulk renaming.
 brew "ripgrep"                            # More ergonomic grep.
 brew "shellcheck"                         # Helps me write shell scripts.
+brew "shfmt"                              # Shell script formatter.
 brew "starship"                           # Zero config prompt.
 brew "stow"                               # I use this to manage dotfiles.
 brew "streamlink"                         # Watch videos in mpv.
@@ -49,33 +52,35 @@ brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
 # Apps
 cask "adobe-dng-converter"       # Convert my RAWs to DNG.
 cask "basictex"                  # Use pandoc to generate PDF files.
-cask "calibre"                   # EBook manager.
 cask "chatterino"                # Much better than the twitch web interface.
 cask "discord"                   # It's discord.
-cask "foobar2000"                # Play music files.
-cask "freac"                     # Audio transcoding.
 cask "logitech-camera-settings"  # Configure my webcam.
-cask "musicbrainz-picard"        # Tag my music.
 cask "rectangle"                 # Window Manager.
 cask "steermouse"                # Configure mouses.
 cask "stolendata-mpv"            # A very good video player.
 cask "transmission"              # Torrent client.
 cask "trex"                      # Easily OCR text.
 cask "vscodium"                  # IDE.
+cask "wezterm"                   # Simple Terminal
+# Stuff I only want to install on demand.
+# cask "calibre"                   # EBook manager.
+# cask "freac"                     # Audio transcoding.
+# cask "musicbrainz-picard"        # Tag my music.
+# cask "foobar2000"                # Play music files.
 
 mas "10ten Japanese Reader", id: 1573540634   # Japanese dictionary.
 mas "AdGuard for Safari", id: 1440147259      # Block ads.
 mas "Bitwarden", id: 1352778147               # Password Manager.
 mas "Capture Passthru", id: 1610925225        # Low latency video capture.
 mas "Dark Reader for Safari", id: 1438243180  # Dark themes for the web.
-mas "Enchanted", id: 6474268307               # Ollama GUI client.
 mas "Hush", id: 1544743900                    # Banish cookie popups.
-mas "Keynote", id: 409183694                  # Office stuff.
-mas "Numbers", id: 409203825                  # Office stuff
-mas "Pages", id: 409201541                    # Office stuff.
-mas "Pixelmator Pro", id: 1289583905          # Should be part of MacOS.
 mas "Stop The Madness Pro", id: 6471380298    # Make the web tolerable.
 mas "Things", id: 904280696                   # Todo list.
+# Offload these to save disk space since I rarely use them.
+# mas "Keynote", id: 409183694                  # Office stuff.
+# mas "Numbers", id: 409203825                  # Office stuff
+# mas "Pages", id: 409201541                    # Office stuff.
+# mas "Pixelmator Pro", id: 1289583905          # Should be part of MacOS.
 
 # Fonts
 cask "font-bigblue-terminal-nerd-font"  # IBM terminal font.
