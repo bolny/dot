@@ -51,6 +51,7 @@ brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
 
 # Apps
 cask "adobe-dng-converter"       # Convert my RAWs to DNG.
+cask "anki"                      # Language learning.
 cask "basictex"                  # Use pandoc to generate PDF files.
 cask "chatterino"                # Much better than the twitch web interface.
 cask "discord"                   # It's discord.
