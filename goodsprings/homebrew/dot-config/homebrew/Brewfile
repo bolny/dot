@@ -4,6 +4,7 @@ brew "bat"                                # Ergonomic cat.
 brew "clang-format"                       # C language formatter
 brew "cmake"                              # Lots of source needs it.
 brew "colima", restart_service: :changed  # Alternative to Docker Desktop.
+brew "copilot"                            # I get it for free might as well use it.
 brew "coreutils"                          # GNU coreutils.
 brew "delta"                              # Ergonomic diff.
 brew "entr"                               # Run processes on file change.
@@ -55,13 +56,14 @@ cask "anki"                      # Language learning.
 cask "basictex"                  # Use pandoc to generate PDF files.
 cask "chatterino"                # Much better than the twitch web interface.
 cask "discord"                   # It's discord.
+cask "eloston-chromium"          # I'll probably have to use this at some point.
 cask "logitech-camera-settings"  # Configure my webcam.
 cask "rectangle"                 # Window Manager.
 cask "steermouse"                # Configure mouses.
 cask "stolendata-mpv"            # A very good video player.
 cask "transmission"              # Torrent client.
 cask "trex"                      # Easily OCR text.
-cask "vscodium"                  # IDE.
+cask "visual-studio-code"                  # IDE.
 cask "wezterm"                   # Simple Terminal
 # Stuff I only want to install on demand.
 # cask "calibre"                   # EBook manager.
