@@ -4,7 +4,6 @@ brew "bat"                                # Ergonomic cat.
 brew "clang-format"                       # C language formatter
 brew "cmake"                              # Lots of source needs it.
 brew "colima", restart_service: :changed  # Alternative to Docker Desktop.
-brew "copilot"                            # I get it for free might as well use it.
 brew "coreutils"                          # GNU coreutils.
 brew "delta"                              # Ergonomic diff.
 brew "entr"                               # Run processes on file change.
