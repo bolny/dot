@@ -8,6 +8,7 @@ brew "coreutils"                          # GNU coreutils.
 brew "delta"                              # Ergonomic diff.
 brew "entr"                               # Run processes on file change.
 brew "eza"                                # Ergonomic ls replacement.
+brew "exiftool"                           # Used in photo renaming.
 brew "fd"                                 # Ergonomic alternative to find.
 brew "ffmpeg"                             # Video and Audio manipulation.
 brew "fish"                               # Ergonomic shell.
