@@ -90,6 +90,9 @@ if status is-interactive
   # Global node provided by volta
   set -x PATH "$HOME"/.volta/bin $PATH
 
+  # Global haskell provided by ghcup
+  set -x PATH "$HOME"/.ghcup/bin $PATH
+
   # Doom bins
   set -x PATH "$HOME"/.config/emacs/bin $PATH
 

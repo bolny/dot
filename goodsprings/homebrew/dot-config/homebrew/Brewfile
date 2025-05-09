@@ -15,6 +15,7 @@ brew "fish"                               # Ergonomic shell.
 brew "fzf"                                # General fuzzy finder.
 brew "gh"                                 # Github client.
 brew "git"                                # More up to date than xcode git.
+brew "ghcup"                              # Manage Haskell
 brew "glslang"                            # Shader language validator
 brew "gpg"                                # For generating public keys.
 brew "helix"                              # Cool litted text editor.
