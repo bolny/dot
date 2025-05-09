@@ -35,6 +35,7 @@ brew "shfmt"                              # Shell script formatter.
 brew "starship"                           # Zero config prompt.
 brew "stow"                               # I use this to manage dotfiles.
 brew "streamlink"                         # Watch videos in mpv.
+brew "syncthing"                          # Sync files
 brew "telnet"                             # Mostly for nethack.
 brew "tmux"                               # Persistent sessions.
 brew "universal-ctags"                    # For the times I don't have an LSP.
