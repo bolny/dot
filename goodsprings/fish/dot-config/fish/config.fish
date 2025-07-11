@@ -5,7 +5,7 @@ if status is-interactive
 
   set -x HOMEBREW_BUNDLE_FILE_GLOBAL "$HOME"/.config/homebrew/Brewfile
 
-  # Completions
+  # Homebrew Completions
   if test -d (brew --prefix)"/share/fish/completions"
     set -p fish_complete_path (brew --prefix)/share/fish/completions
   end
@@ -71,34 +71,25 @@ if status is-interactive
     end
   end
 
-  # useful aliases
+  # NVim is my editor
+  set -x EDITOR "nvim"
+  alias vi="nvim"
+  alias vim="nvim"
+
+  # Other useful aliases
   alias l="eza"           # List files
   alias t="eza --tree"    # list files as Tree
-  alias w="lynx -vikeys"  # Web browse
-  alias q="duck"          # Query search engine
+  alias w="cha"           # Web browse
   alias g="git"           # source Gontrol
   alias s="rg"            # Search inside files
   alias f="fd"            # Find files
   alias c="bat"           # Cat file
-  alias v="vim"           # View file in editor
+  alias v="nvim"          # View file in editor
   alias d="delta"         # Diff files
   alias r="trash"         # Removes file
 
   # Global python provided by uv
   # Implement when https://github.com/astral-sh/uv/issues/7377 is resolved.
-
-  # Global node provided by volta
-  set -x PATH "$HOME"/.volta/bin $PATH
-
-  # Global haskell provided by ghcup
-  set -x PATH "$HOME"/.ghcup/bin $PATH
-
-  # Doom bins
-  set -x PATH "$HOME"/.config/emacs/bin $PATH
-
-  # Personal bins
-  set -x PATH "$HOME"/.bin $PATH
-  set -x PATH "$HOME"/.local/bin $PATH
 
   fish_default_key_bindings
 end

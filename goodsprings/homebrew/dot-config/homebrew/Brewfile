@@ -1,9 +1,7 @@
 tap "d12frosted/emacs-plus"               # Enhanced Emacs
 
 brew "bat"                                # Ergonomic cat.
-brew "clang-format"                       # C language formatter
-brew "cmake"                              # Lots of source needs it.
-brew "colima", restart_service: :changed  # Alternative to Docker Desktop.
+brew "chawan"			          # A usable terminal web browser
 brew "coreutils"                          # GNU coreutils.
 brew "delta"                              # Ergonomic diff.
 brew "entr"                               # Run processes on file change.
@@ -15,25 +13,12 @@ brew "fish"                               # Ergonomic shell.
 brew "fzf"                                # General fuzzy finder.
 brew "gh"                                 # Github client.
 brew "git"                                # More up to date than xcode git.
-brew "ghcup"                              # Manage Haskell
-brew "glslang"                            # Shader language validator
 brew "gpg"                                # For generating public keys.
-brew "helix"                              # Cool litted text editor.
-brew "lynx"                               # DDG stuff from the console.
 brew "macos-trash"                        # Trash, instead of delete, files.
 brew "mas"                                # Install from Mac App Store.
-brew "nvi"                                # Sometimes I like to use vi.
 brew "ollama"                             # Run LLMs.
-brew "pandoc"                             # Universal document converter.
-brew "pass"                               # Standard password manager.
-brew "plantuml"                           # Generate UML diagrams from code.
-brew "podman"                             # Replacement for docker.
-brew "podman-compose"                     # Replacement for docker-compose.
-brew "qemu"                               # For running virtual machines.
 brew "rename"                             # Bulk renaming.
 brew "ripgrep"                            # More ergonomic grep.
-brew "shellcheck"                         # Helps me write shell scripts.
-brew "shfmt"                              # Shell script formatter.
 brew "starship"                           # Zero config prompt.
 brew "stow"                               # I use this to manage dotfiles.
 brew "streamlink"                         # Watch videos in mpv.
@@ -41,31 +26,28 @@ brew "syncthing"                          # Sync files
 brew "telnet"                             # Mostly for nethack.
 brew "tmux"                               # Persistent sessions.
 brew "universal-ctags"                    # For the times I don't have an LSP.
-brew "uv"                                 # Python runner and venv manager.
-brew "vim"                                # My go to text editor.
+brew "neovim"                             # My go to text editor.
 brew "vivid"                              # Generate sane LS_COLORS
-brew "volta"                              # Node runner.
 brew "wget"                               # File downloader.
 brew "yt-dlp"                             # Youtube Downloader.
 brew "zoxide"                             # Ergonomic cd.
 
-# The one true operating system.
-brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-modern-doom3-icon"]
-
 # Apps
 cask "adobe-dng-converter"       # Convert my RAWs to DNG.
 cask "anki"                      # Language learning.
-cask "basictex"                  # Use pandoc to generate PDF files.
-cask "chatterino"                # Much better than the twitch web interface.
+# This is huge, only turn it on when using it.
+#cask "mactex"                    # Use pandoc to generate PDF files, org export.
+# The latest release has critical bugs on Macos
+#cask "chatterino"                # Much better than the twitch web interface.
 cask "discord"                   # It's discord.
-cask "eloston-chromium"          # I'll probably have to use this at some point.
+cask "ungoogled-chromium"          # I'll probably have to use this at some point.
+cask "firefox"
 cask "logitech-camera-settings"  # Configure my webcam.
 cask "rectangle"                 # Window Manager.
 cask "steermouse"                # Configure mouses.
 cask "stolendata-mpv"            # A very good video player.
 cask "transmission"              # Torrent client.
 cask "trex"                      # Easily OCR text.
-cask "visual-studio-code"                  # IDE.
 cask "wezterm"                   # Simple Terminal
 # Stuff I only want to install on demand.
 # cask "calibre"                   # EBook manager.
@@ -73,14 +55,8 @@ cask "wezterm"                   # Simple Terminal
 # cask "musicbrainz-picard"        # Tag my music.
 # cask "foobar2000"                # Play music files.
 
-mas "10ten Japanese Reader", id: 1573540634   # Japanese dictionary.
-mas "AdGuard for Safari", id: 1440147259      # Block ads.
 mas "Bitwarden", id: 1352778147               # Password Manager.
 mas "Capture Passthru", id: 1610925225        # Low latency video capture.
-mas "Dark Reader for Safari", id: 1438243180  # Dark themes for the web.
-mas "Hush", id: 1544743900                    # Banish cookie popups.
-mas "Stop The Madness Pro", id: 6471380298    # Make the web tolerable.
-mas "Things", id: 904280696                   # Todo list.
 # Offload these to save disk space since I rarely use them.
 # mas "Keynote", id: 409183694                  # Office stuff.
 # mas "Numbers", id: 409203825                  # Office stuff
