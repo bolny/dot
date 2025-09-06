@@ -54,6 +54,7 @@
 	defaultBranch = main
 [user]
 	name = Brendon O'Laney
+	email = brendon@brendonolaney.com
 [help]
 	autocorrect = prompt
 [interactive]
