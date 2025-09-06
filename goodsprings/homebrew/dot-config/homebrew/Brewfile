@@ -42,6 +42,7 @@ cask "anki"                      # Language learning.
 cask "discord"                   # It's discord.
 cask "ungoogled-chromium"          # I'll probably have to use this at some point.
 cask "firefox"
+cask "keka"                      # Archiver
 cask "logitech-camera-settings"  # Configure my webcam.
 cask "rectangle"                 # Window Manager.
 cask "steermouse"                # Configure mouses.
