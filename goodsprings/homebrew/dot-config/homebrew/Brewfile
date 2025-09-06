@@ -16,6 +16,7 @@ brew "git"                                # More up to date than xcode git.
 brew "gpg"                                # For generating public keys.
 brew "macos-trash"                        # Trash, instead of delete, files.
 brew "mas"                                # Install from Mac App Store.
+brew "newsraft"				  # RSS reader.
 brew "ollama"                             # Run LLMs.
 brew "rename"                             # Bulk renaming.
 brew "ripgrep"                            # More ergonomic grep.
