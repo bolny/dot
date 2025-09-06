@@ -71,6 +71,11 @@ if status is-interactive
     end
   end
 
+  function web_search
+    set query (echo "$argv" | string escape --style=url)
+    cha "duckduckgo.com/html?q=$query"
+  end
+
   # NVim is my editor
   set -x EDITOR "nvim"
   alias vi="nvim"
@@ -79,8 +84,8 @@ if status is-interactive
   # Other useful aliases
   alias l="eza"           			# List files
   alias t="eza --tree"    			# list files as Tree
-  alias w="cha"  				# Web browse
-  alias q="cha html.duckduckgo.com/q=$argv"     # Query search engine
+  alias w="cha"  		        		# Web browse
+  alias q="web_search"          # Query search engine
   alias g="git"           			# Source Gontrol
   alias s="rg"            			# Search inside files
   alias f="fd"            			# Find files
