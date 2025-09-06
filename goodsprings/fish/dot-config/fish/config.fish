@@ -77,16 +77,17 @@ if status is-interactive
   alias vim="nvim"
 
   # Other useful aliases
-  alias l="eza"           # List files
-  alias t="eza --tree"    # list files as Tree
-  alias w="cha"           # Web browse
-  alias g="git"           # source Gontrol
-  alias s="rg"            # Search inside files
-  alias f="fd"            # Find files
-  alias c="bat"           # Cat file
-  alias v="nvim"          # View file in editor
-  alias d="delta"         # Diff files
-  alias r="trash"         # Removes file
+  alias l="eza"           			# List files
+  alias t="eza --tree"    			# list files as Tree
+  alias w="cha"  				# Web browse
+  alias q="cha html.duckduckgo.com/q=$argv"     # Query search engine
+  alias g="git"           			# Source Gontrol
+  alias s="rg"            			# Search inside files
+  alias f="fd"            			# Find files
+  alias c="bat"           			# Cat file
+  alias v="nvim"          			# View file in editor
+  alias d="delta"         			# Diff files
+  alias r="trash"         			# Removes file
 
   # Global python provided by uv
   # Implement when https://github.com/astral-sh/uv/issues/7377 is resolved.
