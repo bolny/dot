@@ -76,6 +76,10 @@ if status is-interactive
     cha -M "duckduckgo.com/html?q=$query"
   end
 
+  function unquarrantine
+    xattr -r -d com.apple.quarantine $argv
+  end
+
   # NVim is my editor
   set -x EDITOR "nvim"
   alias vi="nvim"
