@@ -1,2 +1,9 @@
 # Select the best available MP4 that is 1440p or smaller.
--f "bv*[ext=mp4][height<=1440]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"
+--format "bv*[ext=mp4][height<=1440]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"
+
+# Get rid of the brackets around the video id.
+--output "%(title)s__%(id)s__.%(ext)s"
+
+# Avoid spaces, special characters, and non-ascii characters.
+--restrict-filenames
+
