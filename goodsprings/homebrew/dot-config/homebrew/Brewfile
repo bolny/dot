@@ -1,7 +1,5 @@
-tap "d12frosted/emacs-plus"               # Enhanced Emacs
-
 brew "bat"                                # Ergonomic cat.
-brew "chawan"			          # A usable terminal web browser
+brew "chawan"             			          # A usable terminal web browser
 brew "coreutils"                          # GNU coreutils.
 brew "delta"                              # Ergonomic diff.
 brew "entr"                               # Run processes on file change.
@@ -14,10 +12,13 @@ brew "fzf"                                # General fuzzy finder.
 brew "gh"                                 # Github client.
 brew "git"                                # More up to date than xcode git.
 brew "gpg"                                # For generating public keys.
+brew "helix"                              # Trying this new editor.
 brew "macos-trash"                        # Trash, instead of delete, files.
 brew "mas"                                # Install from Mac App Store.
-brew "newsraft"				  # RSS reader.
+brew "newsraft"				                    # RSS readere
 brew "ollama"                             # Run LLMs.
+brew "podman"                             # For when I want a container.
+brew "podman-compose"                     # Ditto.
 brew "rename"                             # Bulk renaming.
 brew "ripgrep"                            # More ergonomic grep.
 brew "starship"                           # Zero config prompt.
@@ -26,48 +27,8 @@ brew "streamlink"                         # Watch videos in mpv.
 brew "syncthing"                          # Sync files
 brew "telnet"                             # Mostly for nethack.
 brew "tmux"                               # Persistent sessions.
-brew "universal-ctags"                    # For the times I don't have an LSP.
 brew "neovim"                             # My go to text editor.
 brew "vivid"                              # Generate sane LS_COLORS
 brew "wget"                               # File downloader.
 brew "yt-dlp"                             # Youtube Downloader.
 brew "zoxide"                             # Ergonomic cd.
-
-# Apps
-cask "adobe-dng-converter"       # Convert my RAWs to DNG.
-cask "anki"                      # Language learning.
-# This is huge, only turn it on when using it.
-#cask "mactex"                    # Use pandoc to generate PDF files, org export.
-# The latest release has critical bugs on Macos
-#cask "chatterino"                # Much better than the twitch web interface.
-cask "discord"                   # It's discord.
-cask "ungoogled-chromium"          # I'll probably have to use this at some point.
-cask "firefox"
-cask "keka"                      # Archiver
-cask "logitech-camera-settings"  # Configure my webcam.
-cask "rectangle"                 # Window Manager.
-cask "steermouse"                # Configure mouses.
-cask "stolendata-mpv"            # A very good video player.
-cask "transmission"              # Torrent client.
-cask "trex"                      # Easily OCR text.
-cask "wezterm"                   # Simple Terminal
-# Stuff I only want to install on demand.
-# cask "calibre"                   # EBook manager.
-# cask "freac"                     # Audio transcoding.
-# cask "musicbrainz-picard"        # Tag my music.
-# cask "foobar2000"                # Play music files.
-
-mas "Bitwarden", id: 1352778147               # Password Manager.
-mas "Capture Passthru", id: 1610925225        # Low latency video capture.
-# Offload these to save disk space since I rarely use them.
-# mas "Keynote", id: 409183694                  # Office stuff.
-# mas "Numbers", id: 409203825                  # Office stuff
-# mas "Pages", id: 409201541                    # Office stuff.
-# mas "Pixelmator Pro", id: 1289583905          # Should be part of MacOS.
-
-# Fonts
-cask "font-bigblue-terminal-nerd-font"  # IBM terminal font.
-cask "font-commit-mono-nerd-font"       # Generic font.
-cask "font-departure-mono-nerd-font"    # Pixel font.
-cask "font-eldur"                       # Occult font.
-cask "font-charter"                     # Presentation font.
