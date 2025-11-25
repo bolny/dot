@@ -1,43 +1,47 @@
-# Terminal Stuff
-brew "bat"
-brew "colima", restart_service: :changed
-brew "cmake"
-brew "coreutils"
-brew "d2"
-brew "delta"
-brew "docker"
-brew "docker-compose"
-brew "entr"
-brew "eza"
-brew "fd"
-brew "fish"
-brew "fzf"
-brew "gh"
-brew "git"
-brew "gpg"
-brew "grep"
-brew "helix"
-brew "helm"
-brew "kubectl"
-brew "libpq", link: true
-brew "macos-trash"
-brew "ollama"
-brew "openshift-cli"
-brew "pandoc"
-brew "pass"
-brew "rename"
-brew "ripgrep"
-brew "shellcheck"
-brew "starship"
-brew "stow"
-brew "syncthing"
-brew "tmux"
-brew "universal-ctags"
-brew "uv"
-brew "vim"
-brew "vivid"
-brew "volta"
-brew "wget"
-brew "yt-dlp"
-brew "zoxide"
+# Ergonomics
+brew "bat"                   # Cat
+brew "chawan"                # Text mode web browser `cha`
+brew "curl"                  # Mostly for wcurl, a better wget
+brew "delta"                 # Diff
+brew "eza"                   # Ls
+brew "fd"                    # Find
+brew "fish"                  # Shell
+brew "fzf"                   # Fuzzy finder
+brew "gh"                    # Github
+brew "git"                   # Source Control
+brew "helix"                 # Vim
+brew "macos-trash"           # Trash files instead of delete
+brew "rename"                # Mass file renaming
+brew "ripgrep"               # Grep
+brew "starship"              # Shell prompt
+brew "vivid"                 # Ls colours
+brew "zoxide"                # Cd
 
+# Development Tools
+brew "entr"                  # Run commands on file write
+brew "helm"                  # Compile k8s yamls for testing
+brew "kubectl"               # Testing k8s deploys locally
+brew "libpq", link: true     # For the psql client
+brew "openshift-cli"         # OpenShift interface
+brew "podman"                # FOSS docker
+brew "podman-compose"        # FOSS docker-compose
+brew "uv"                    # Python environment management
+brew "volta"                 # NodeJS environment management
+
+  
+# Services
+brew "colima",               # FOSS docker desktop
+  restart_service: :changed
+brew "ollama"                # Local LLMs
+brew "syncthing"             # File sync
+ 
+# LSPs
+brew "markdown-oxide"        # Markdown
+
+# Formatters
+brew "prettier"              # js, css, md, html, GraphQL, yaml
+
+# Other Tools
+brew "pandoc"                # Universal document converter
+brew "stow"                  # Manage dot files
+brew "yt-dlp"                # Video downloader
