@@ -41,21 +41,3 @@ brew "wget"
 brew "yt-dlp"
 brew "zoxide"
 
-# Apps
-cask "basictex"
-cask "dbeaver-community"
-cask "dteoh-devdocs"
-cask "figma"
-cask "logitech-camera-settings"
-cask "microsoft-edge"
-cask "obs"
-cask "rectangle"
-cask "stretchly"
-cask "tailscale"
-cask "visual-studio-code"
-cask "wacom-tablet"
-cask "wezterm"
-
-# Fonts
-cask "font-departure-mono-nerd-font"
-cask "font-charter"
