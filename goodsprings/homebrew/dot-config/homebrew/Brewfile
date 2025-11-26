@@ -1,34 +1,41 @@
+# Ergonomics
 brew "bat"                                # Ergonomic cat.
-brew "chawan"             			          # A usable terminal web browser
-brew "coreutils"                          # GNU coreutils.
+brew "chawan"                             # A usable terminal web browser
+brew "curl"                               # For wcurl
 brew "delta"                              # Ergonomic diff.
-brew "entr"                               # Run processes on file change.
 brew "eza"                                # Ergonomic ls replacement.
-brew "exiftool"                           # Used in photo renaming.
 brew "fd"                                 # Ergonomic alternative to find.
-brew "ffmpeg"                             # Video and Audio manipulation.
 brew "fish"                               # Ergonomic shell.
 brew "fzf"                                # General fuzzy finder.
 brew "gh"                                 # Github client.
 brew "git"                                # More up to date than xcode git.
-brew "gpg"                                # For generating public keys.
 brew "helix"                              # Trying this new editor.
 brew "macos-trash"                        # Trash, instead of delete, files.
-brew "mas"                                # Install from Mac App Store.
-brew "newsraft"				                    # RSS readere
-brew "ollama"                             # Run LLMs.
-brew "podman"                             # For when I want a container.
-brew "podman-compose"                     # Ditto.
 brew "rename"                             # Bulk renaming.
 brew "ripgrep"                            # More ergonomic grep.
 brew "starship"                           # Zero config prompt.
+brew "vivid"                              # Generate sane LS_COLORS
+brew "zoxide"                             # Ergonomic cd.
+
+# Development Tools
+brew "entr"                               # Run processes on file change.
+brew "podman"                             # For when I want a container.
+brew "podman-compose"                     # Ditto.ya
+
+# Services
+brew "ollama"                             # Run LLMs.
+brew "syncthing"                          # Sync files
+
+# LSPs
+brew "markdown-oxide"                     # md
+
+# Formatters
+brew "prettier"                           # js, css, md, html, gql, yaml
+
+# Other Tools
+brew "exiftool"                           # Used in photo renaming.
+brew "ffmpeg"                             # Video and Audio manipulation.
+brew "newsraft"                           # RSS readere
 brew "stow"                               # I use this to manage dotfiles.
 brew "streamlink"                         # Watch videos in mpv.
-brew "syncthing"                          # Sync files
-brew "telnet"                             # Mostly for nethack.
-brew "tmux"                               # Persistent sessions.
-brew "neovim"                             # My go to text editor.
-brew "vivid"                              # Generate sane LS_COLORS
-brew "wget"                               # File downloader.
 brew "yt-dlp"                             # Youtube Downloader.
-brew "zoxide"                             # Ergonomic cd.
