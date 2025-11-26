@@ -8,3 +8,6 @@ default-yank-register = "+"
 [keys.normal]
 # Using C-c feels weird.
 "#" = "toggle_comments"
+
+[editor.file-picker]
+hidden = false
