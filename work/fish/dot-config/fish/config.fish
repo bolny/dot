@@ -123,4 +123,7 @@ if status is-interactive
     # Personal bins
     set -x PATH "$HOME"/.bin $PATH
     set -x PATH "$HOME"/.local/bin $PATH
+
+    # Private bins
+    set -x PATH "$HOME"/Source/_bin $PATH
 end

@@ -9,6 +9,7 @@ brew "fish"                  # Shell
 brew "fzf"                   # Fuzzy finder
 brew "gh"                    # Github
 brew "git"                   # Source Control
+brew "gitu"                  # TUI for git
 brew "helix"                 # Vim
 brew "macos-trash"           # Trash files instead of delete
 brew "rename"                # Mass file renaming
@@ -23,18 +24,16 @@ brew "helm"                  # Compile k8s yamls for testing
 brew "kubectl"               # Testing k8s deploys locally
 brew "libpq", link: true     # For the psql client
 brew "openshift-cli"         # OpenShift interface
-brew "podman"                # FOSS docker
-brew "podman-compose"        # FOSS docker-compose
+brew "docker"                # Containers
+brew "docker-compose"        # Containers
 brew "uv"                    # Python environment management
 brew "volta"                 # NodeJS environment management
 
-  
 # Services
-brew "colima",               # FOSS docker desktop
-  restart_service: :changed
 brew "ollama"                # Local LLMs
 brew "syncthing"             # File sync
- 
+brew "colima"                # Containers
+
 # LSPs
 brew "markdown-oxide"        # Markdown
 
