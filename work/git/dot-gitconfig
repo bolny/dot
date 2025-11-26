@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = vi
+	editor = hx
 	fsmonitor = true
 	untackedCache = true
 	pager = delta

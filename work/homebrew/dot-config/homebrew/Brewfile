@@ -38,9 +38,11 @@ brew "colima"                      # Containers
 # LSPs
 brew "markdown-oxide"              # Markdown
 brew "typescript-language-server"  # ts
+brew "lua-language-server"         # lua
 
 # Formatters
 brew "prettier"                    # js, ts, css, md, html, GraphQL, yaml
+brew "stylua"                      # lua
 
 # Other Tools
 brew "pandoc"                      # Universal document converter
