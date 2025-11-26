@@ -3,6 +3,7 @@ if status is-interactive
     set -x PATH /opt/homebrew/bin $PATH
     set -x PATH /opt/homebrew/sbin $PATH
     set -x HOMEBREW_BUNDLE_FILE_GLOBAL "$HOME"/.config/homebrew/Brewfile
+    set -x DOCKER_HOST "unix:///Users/bolaney/.colima/default/docker.sock"
 
     # Use homebrew curl
     if test -d (brew --prefix)"/opt/curl/bin"
