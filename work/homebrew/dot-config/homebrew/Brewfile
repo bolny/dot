@@ -3,6 +3,7 @@ brew "bat"                   # Cat
 brew "chawan"                # Text mode web browser `cha`
 brew "curl"                  # Mostly for wcurl, a better wget
 brew "delta"                 # Diff
+brew "ducker"                # Docker
 brew "eza"                   # Ls
 brew "fd"                    # Find
 brew "fish"                  # Shell
