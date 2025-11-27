@@ -21,3 +21,8 @@ auto-format = true
 name = "lua"
 formatter = { command = "stylua", args = [ "-" ] }
 auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = 'prettier' }
+auto-format = true
