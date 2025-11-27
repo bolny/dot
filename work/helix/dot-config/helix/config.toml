@@ -1,7 +1,11 @@
 theme = "solarized_light"
 
-[editor]
+# Should be able to do this when the next update comes out.
+# [theme]
+# dark = "solarized_dark"
+# light = "solarized_light"
 
+[editor]
 # Use system clipboard.
 default-yank-register = "+"
 

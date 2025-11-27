@@ -19,12 +19,13 @@ brew "zoxide"                             # Ergonomic cd.
 
 # Development Tools
 brew "entr"                               # Run processes on file change.
-brew "podman"                             # For when I want a container.
-brew "podman-compose"                     # Ditto.ya
+brew "docker"                             # For when I want a container.
+brew "docker-compose"                     # Ditto.
 
 # Services
 brew "ollama"                             # Run LLMs.
 brew "syncthing"                          # Sync files
+brew "colima"                             # Containerd runtime
 
 # LSPs
 brew "markdown-oxide"                     # md

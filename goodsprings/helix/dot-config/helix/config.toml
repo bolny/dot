@@ -1,1 +1,17 @@
 theme = "solarized_light"
+
+# Should be able to do this when the next update comes out.
+# [theme]
+# dark = "solarized_dark"
+# light = "solarized_light"
+
+[editor]
+# Use system clipboard.
+default-yank-register = "+"
+
+[keys.normal]
+# Using C-c feels weird.
+"#" = "toggle_comments"
+
+[editor.file-picker]
+hidden = false
