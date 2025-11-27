@@ -35,6 +35,7 @@ if status is-interactive
 
     # Set up starship prompt
     if type -q starship
+        set -x STARSHIP_LOG error
         starship init fish | source
     else
         echo "Starship not available."
