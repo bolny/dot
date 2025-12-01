@@ -120,6 +120,8 @@ if status is-interactive
     alias d="delta" # Diff files
     alias r="trash" # Removes file
 
+    alias rsync="rsync -av --progress"
+
     # Personal bins
     set -x PATH "$HOME"/.bin $PATH
     set -x PATH "$HOME"/.local/bin $PATH
