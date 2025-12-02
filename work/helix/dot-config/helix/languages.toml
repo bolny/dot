@@ -1,28 +1,26 @@
 [[language]]
 name = "markdown"
-formatter = { command = 'prettier' }
+formatter = { command = 'prettier', args = ["--parser", "markdown"] }
 
 [[language]]
 name = "javascript"
-formatter = { command = 'prettier' }
-auto-format = true
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 
 [[language]]
 name = "typescript"
 formatter = { command = 'prettier' }
-auto-format = true
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 
 [[language]]
 name = "tsx"
 formatter = { command = 'prettier' }
-auto-format = true
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 
 [[language]]
 name = "lua"
 formatter = { command = "stylua", args = [ "-" ] }
-auto-format = true
 
 [[language]]
 name = "yaml"
 formatter = { command = 'prettier' }
-auto-format = true
+formatter = { command = 'prettier', args = ["--parser", "yaml"] }
