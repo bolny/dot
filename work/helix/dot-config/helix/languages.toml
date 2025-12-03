@@ -26,6 +26,3 @@ formatter = { command = 'prettier', args = ["--parser", "yaml"] }
 name = "python"
 formatter = { command = "ruff", args = ["format", "-"] }
 auto-format = true
-# This tells pylsp to look in the current dir for imports. This is
-# useful because I often make scripts rather than modules.
-environment = { PYTHONPATH = "." }
