@@ -25,4 +25,3 @@ formatter = { command = 'prettier', args = ["--parser", "yaml"] }
 [[language]]
 name = "python"
 formatter = { command = "ruff", args = ["format", "-"] }
-auto-format = true
