@@ -29,9 +29,15 @@ brew "colima"                             # Containerd runtime
 
 # LSPs
 brew "markdown-oxide"                     # md
+brew "typescript-language-server"         # ts
+brew "lua-language-server"                # lua
+brew "dockerfile-language-server"         # Dockerfile
+brew "docker-compose-langserver"          # docker-compose.yml
+brew "yaml-language-server"               # yml
 
 # Formatters
 brew "prettier"                           # js, css, md, html, gql, yaml
+brew "stylua"                             # lua
 
 # Other Tools
 brew "exiftool"                           # Used in photo renaming.
