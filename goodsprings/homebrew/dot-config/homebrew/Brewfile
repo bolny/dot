@@ -21,6 +21,7 @@ brew "zoxide"                             # Ergonomic cd.
 brew "entr"                               # Run processes on file change.
 brew "docker"                             # For when I want a container.
 brew "docker-compose"                     # Ditto.
+brew "uv"                                 # Python environment
 
 # Services
 brew "ollama"                             # Run LLMs.
