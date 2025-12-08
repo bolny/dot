@@ -25,7 +25,6 @@ brew "uv"                                 # Python environment
 
 # Services
 brew "ollama"                             # Run LLMs.
-brew "syncthing"                          # Sync files
 brew "colima"                             # Containerd runtime
 
 # LSPs

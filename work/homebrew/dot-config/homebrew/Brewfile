@@ -33,7 +33,6 @@ brew "volta"                       # NodeJS environment management
 
 # Services
 brew "ollama"                      # Local LLMs
-brew "syncthing"                   # File sync
 brew "colima"                      # Containers
 
 # LSPs
