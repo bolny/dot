@@ -132,4 +132,8 @@ if status is-interactive
 
     # Private bins
     set -x PATH "$HOME"/Source/_bin $PATH
+
+    if test -e "$HOME/.secrets.fish"
+        source "$HOME/.secrets.fish"
+    end
 end
