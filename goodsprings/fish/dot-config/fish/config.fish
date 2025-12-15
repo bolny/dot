@@ -131,4 +131,9 @@ if status is-interactive
     # Personal bins
     set -x PATH "$HOME"/.bin $PATH
     set -x PATH "$HOME"/.local/bin $PATH
+
+    if test -e "$HOME/secrets.fish"
+        source "$HOME/secrets.fish"
+    end
+
 end
