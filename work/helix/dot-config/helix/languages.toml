@@ -1,27 +1,32 @@
 [[language]]
 name = "markdown"
-formatter = { command = 'prettier', args = ["--parser", "markdown"] }
+formatter = { command = "prettier", args = ["--parser", "markdown"] }
 
 [[language]]
 name = "javascript"
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "typescript"
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "tsx"
-formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "lua"
-formatter = { command = "stylua", args = [ "-" ] }
+formatter = { command = "stylua", args = ["-"] }
 
 [[language]]
 name = "yaml"
-formatter = { command = 'prettier', args = ["--parser", "yaml"] }
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
 
 [[language]]
 name = "python"
 formatter = { command = "ruff", args = ["format", "-"] }
+
+[[language]]
+name = "toml"
+formatter = { command = "tombi", args = ["format", "-"] }
+auto-format = true

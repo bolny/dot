@@ -9,9 +9,9 @@ theme = "solarized_light"
 # Use system clipboard.
 default-yank-register = "+"
 
+[editor.file-picker]
+hidden = false
+
 [keys.normal]
 # Using C-c feels weird.
 "#" = "toggle_comments"
-
-[editor.file-picker]
-hidden = false
