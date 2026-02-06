@@ -52,3 +52,4 @@ brew "pandoc"                      # Universal document converter
 brew "stow"                        # Manage dot files
 brew "task"                        # Task manager
 brew "yt-dlp"                      # Video downloader
+brew "ffmpeg"                      # Video/Audio converter
