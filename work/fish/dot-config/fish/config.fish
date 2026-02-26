@@ -1,13 +1,9 @@
 if status is-interactive
-    # Homebrew setup
-    set -x PATH /opt/homebrew/bin $PATH
-    set -x PATH /opt/homebrew/sbin $PATH
-    set -x HOMEBREW_BUNDLE_FILE_GLOBAL "$HOME"/.config/homebrew/Brewfile
-    # This tells programs that integrate with docker where to look.
-    set -x DOCKER_HOST "unix:///Users/bolaney/.colima/default/docker.sock"
-
     # Supress greeting by setting it to an empty function
     set -g fish_greeting
+
+    # Tell homebrew where my Brewfile is.
+    set -x HOMEBREW_BUNDLE_FILE_GLOBAL "$HOME"/.config/homebrew/Brewfile
 
     # Use homebrew curl
     if test -d (brew --prefix)"/opt/curl/bin"
