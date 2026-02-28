@@ -8,7 +8,7 @@ else
 end
 
 config.enable_tab_bar = true
-config.use_fancy_tab_bar = false
+config.use_fancy_tab_bar = true
 config.window_decorations = "INTEGRATED_BUTTONS"
 config.font = wezterm.font({ family = "Drafting*Mono Nerd Font" })
 config.font_size = 14

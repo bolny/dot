@@ -1,5 +1,5 @@
 [display]
-color-mode = "monochrome"
+color-mode = "auto"
 
 [page]
 "C-k" = "() => pager.load(\"ddg:\")"

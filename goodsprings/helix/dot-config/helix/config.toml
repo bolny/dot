@@ -1,5 +1,5 @@
-# theme = "solarized_light"
-theme = "solarized_dark"
+theme = "solarized_light"
+# theme = "solarized_dark"
 
 # Should be able to do this when the next update comes out.
 # [theme]

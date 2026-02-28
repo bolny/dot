@@ -1,3 +1,4 @@
+@News
 http://feeds.arstechnica.com/arstechnica/index "Ars Technica"
 https://www.cbc.ca/webfeed/rss/rss-canada-britishcolumbia "CBC - BC"
 https://www.cbc.ca/webfeed/rss/rss-canada "CBC - Canada"
@@ -10,6 +11,8 @@ https://onefoottsunami.com/feed/json/ "One Foot Tsunami"
 https://ploum.net/atom_en.xml "Ploum.net"
 https://pluralistic.net/feed/ "Pluralistic: Daily links from Cory Doctorow"
 https://www.startmenu.co.uk/home?format=rss "startmenu"
+
+@Videos
 https://www.youtube.com/feeds/videos.xml?channel_id=UC0fDG3byEcMtbOqPMymDNbw "/noclip"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCo4au6lRX4-_gIczBneEZWA "Aamon Animations"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJ6KZTTnkE-s2XFJJmoTAkw "Accursed Farms"
