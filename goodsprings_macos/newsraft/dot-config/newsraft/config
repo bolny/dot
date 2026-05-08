@@ -1,2 +1,0 @@
-bind m exec mpv "%l"
-bind b exec cha "%l"
